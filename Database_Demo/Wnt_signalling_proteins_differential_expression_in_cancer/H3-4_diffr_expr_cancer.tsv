@@ -1,0 +1,15 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000168148	homo sapiens	E-GEOD-68086	'non-small cell lung carcinoma' vs 'normal'	-4	2.52189695633014e-13	
+ENSG00000168148	homo sapiens	E-GEOD-68086	'colorectal carcinoma' vs 'normal'	-4	3.28706403269557e-10	
+ENSG00000168148	homo sapiens	E-CURD-45	'neoplasm' vs 'normal tissue adjacent to neoplasm'	3.8	0.000430545516525194	
+ENSG00000168148	homo sapiens	E-GEOD-68086	'hepatobiliary carcinoma' vs 'normal'	-3.7	0.0000227305480496544	
+ENSG00000168148	homo sapiens	E-GEOD-68086	'pancreatic adenocarcinoma' vs 'normal'	-3.1	0.00000344798935981993	
+ENSG00000168148	homo sapiens	E-GEOD-68086	'breast carcinoma' vs 'normal'	-2.6	0.0000572952282743417	
+ENSG00000168148	homo sapiens	E-GEOD-68086	'glioblastoma' vs 'normal'	-2	0.000858641137252019	
+ENSG00000168148	homo sapiens	E-MTAB-779	'breast carcinoma' vs 'normal'	1.8	0.00419151908784139	
+ENSG00000168148	homo sapiens	E-MTAB-7737	'metformin; 4 millimolar' vs 'none' in 'MDA-MB-468'	-1.3	0.000115272895451898	
+ENSG00000168148	homo sapiens	E-MTAB-6401	'high Twist expression; weak Slug expression' vs 'low Twist expression; strong Slug expression' in 'unspecified peripheral T-cell lymphoma'	1.3	0.020627152219985	
+ENSG00000168148	homo sapiens	E-MTAB-6401	'high Twist expression; weak Slug expression' vs 'low Twist expression; strong Slug expression' in 'angioimmunoblastic T-cell lymphoma'	1.2	0.0064443716518533	
+ENSG00000168148	homo sapiens	E-MTAB-5873	'MED13 and MED13L knockdown by siRNA' vs 'wild type phenotype'	1.1	0.00653297649585632	
+ENSG00000168148	homo sapiens	E-MTAB-7737	'metformin; 1 millimolar' vs 'none' in 'MDA-MB-468'	-1	0.0000982366268808307	
+ENSG00000168148	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to N terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-1	0.0466728493309453	

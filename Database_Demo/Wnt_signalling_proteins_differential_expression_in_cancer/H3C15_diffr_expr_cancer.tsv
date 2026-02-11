@@ -1,0 +1,10 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000203852	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to N terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-4.8	4.60727472673626e-52	
+ENSG00000203852	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to C terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-4.5	6.69537134127643e-43	
+ENSG00000203852	homo sapiens	E-GEOD-63452	'24 hour' vs '0 hour' in 'MCF-10A-H1047R'	3.9	0.0000111346277365867	
+ENSG00000203852	homo sapiens	E-GEOD-63452	'12 hour' vs '0 hour' in 'MCF-10A-H1047R'	3.8	0.000163361359756882	
+ENSG00000203852	homo sapiens	E-GEOD-63452	'12 hour' vs '0 hour' in 'MCF-10A'	2.4	0.00847486937277855	
+ENSG00000203852	homo sapiens	E-GEOD-37003	'anti-m6A' vs 'none'	2.1	0.0414714429864479	
+ENSG00000203852	homo sapiens	E-GEOD-32424	'tumor' vs 'normal'	1.8	0.0448198902880567	
+ENSG00000203852	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-LM2'	-1.6	0.00331828956959514	
+ENSG00000203852	homo sapiens	E-MTAB-6564	'RNPS1 knockdown and rescue with RNPS1 loss of function mutant' vs 'wild type phenotype'	-1.4	0.0307005907662592	

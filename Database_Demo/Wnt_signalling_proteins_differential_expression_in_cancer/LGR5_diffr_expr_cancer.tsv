@@ -1,0 +1,30 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000139292	homo sapiens	E-MTAB-8677	'SPI1 -/-' vs 'SPI1 +/+'	-7.7	2.01183042275827e-154	
+ENSG00000139292	homo sapiens	E-MTAB-8677	'SPI1 +/-' vs 'SPI1 +/+'	-7.3	4.62277711245003e-192	
+ENSG00000139292	homo sapiens	E-GEOD-21668	'early mesodermal progenitors' vs 'undifferentiated cells'	7.1	4.09175462359058e-9	
+ENSG00000139292	homo sapiens	E-MTAB-4054	'esophageal adenocarcinoma' vs 'normal'	6.5	1.96391506819745e-21	
+ENSG00000139292	homo sapiens	E-MTAB-5537	'estrogen receptor alpha shRNA' vs 'scrambled shRNA'	6.3	4.29477503850375e-7	
+ENSG00000139292	homo sapiens	E-MTAB-4054	'Barrett’s esophagus; low-grade dysplasia' vs 'normal'	5.7	1.39010306232927e-17	
+ENSG00000139292	homo sapiens	E-MTAB-11313	'ERO1 knockout' vs 'wild type genotype' in 'vehicle'	5.6	7.32399023416221e-7	
+ENSG00000139292	homo sapiens	E-GEOD-18105	'metastatic recurrence; tumor' vs 'metastatic recurrence; normal adjacent tissue'	5.6	0.000192675854549552	
+ENSG00000139292	homo sapiens	E-GEOD-58252	'Snail overexpression' vs 'control'	5.2	6.91621896468724e-8	
+ENSG00000139292	homo sapiens	E-GEOD-18105	'metastasis; tumor' vs 'metastasis; normal adjacent tissue'	5	0.000452641644954574	
+ENSG00000139292	homo sapiens	E-GEOD-59234	'SOX2 siRNA' vs 'negative control' in '2102Ep'	4.8	1.64574247138546e-9	
+ENSG00000139292	homo sapiens	E-GEOD-61973	'PARK2 overexpression' vs 'control'	-4.6	4.16077164035224e-9	
+ENSG00000139292	homo sapiens	E-GEOD-18105	'non metastasis; tumor' vs 'non metastasis; normal adjacent tissue'	4.6	8.7990645357372e-7	
+ENSG00000139292	homo sapiens	E-GEOD-32424	'tumor' vs 'normal'	4.4	0.000474842891154031	
+ENSG00000139292	homo sapiens	E-MTAB-11313	'ERO1 knockout' vs 'wild type genotype' in 'ISRIB; 2.5 milligram per kilogram and paclitaxel; 15 milligram per kilogram'	4.2	1.09914709362426e-7	
+ENSG00000139292	homo sapiens	E-GEOD-68086	'breast carcinoma' vs 'normal'	-4	8.52473490343374e-16	
+ENSG00000139292	homo sapiens	E-MTAB-5678	'squamous cell carcinoma' vs 'normal'	-4	6.80801098364338e-15	
+ENSG00000139292	homo sapiens	E-GEOD-15799	'NS398 100 micromolar' vs 'DMSO'	-3.9	0.00000120923712942314	
+ENSG00000139292	homo sapiens	E-GEOD-68086	'colorectal carcinoma' vs 'normal'	-3.8	8.99930167228806e-15	
+ENSG00000139292	homo sapiens	E-GEOD-68086	'pancreatic adenocarcinoma' vs 'normal'	-3.8	1.40134370972809e-12	
+ENSG00000139292	homo sapiens	E-GEOD-52194	'triple-negative breast cancer; breast carcinoma' vs 'normal'	3.8	0.00656950084977334	
+ENSG00000139292	homo sapiens	E-GEOD-19665	'cancer tissue' vs 'surrounding noncancerous tissue' in 'hepatitis C virus induced hepatocellular carcinoma'	3.8	0.0246454399768203	
+ENSG00000139292	homo sapiens	E-MTAB-5243	'ZEB1 knockout' vs 'wild type'	3.5	6.27069194373002e-27	
+ENSG00000139292	homo sapiens	E-MTAB-11313	'ERO1 knockout' vs 'wild type genotype' in 'paclitaxel; 15 milligram per kilogram'	3.5	2.0672965007547e-9	
+ENSG00000139292	homo sapiens	E-GEOD-41678	'Cal51; cocultured with fibroblast CCD1112Sk' vs 'Cal51; normal'	3.5	1.92865707711472e-8	
+ENSG00000139292	homo sapiens	E-GEOD-36035	'lymphangiogenic and very metastatic' vs 'parental pool'	-3.5	0.000144157129937984	
+ENSG00000139292	homo sapiens	E-GEOD-19249	'colon cancer' vs 'normal' in 'colon; Formalin-fixed paraffin-embedded tissue'	3.5	0.00201930489943485	
+ENSG00000139292	homo sapiens	E-GEOD-46493	'Nutlin-3; 10 micromolar' vs 'DMSO; 0.1 percent'	-3.4	8.98220524049424e-9	
+ENSG00000139292	homo sapiens	E-MEXP-1996	'ACO2-V5 overexpression 

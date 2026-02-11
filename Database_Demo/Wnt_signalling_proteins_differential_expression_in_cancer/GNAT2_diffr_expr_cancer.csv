@@ -1,0 +1,9 @@
+Gene,Protein,Gene Name(s),Species,Experiment accession,Comparison,log_2 fold change,Adjusted p-value,t-statistic
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-80832,'Zaire ebolavirus lacking the mucin domain of GP' vs 'mock' at '8 hour',2.9,0.00000876468111524697,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-48433,'HOP-92; large cell undifferentiated lung; P10' vs 'HOP-92; large cell undifferentiated lung; P0',1.5,2.61893453508799e-7,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-MTAB-5102,'154; 0.4 micromolar' vs 'DMSO',-1.3,0.00000149877726961391,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-19249,'lung cancer' vs 'normal' in 'lung; Formalin-fixed paraffin-embedded tissue',-1.2,0.0112859285580783,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-19249,'lung cancer' vs 'normal' in 'lung; Fresh-frozen tissue',-1.1,0.00271678275796784,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-80832,'Zaire ebolavirus lacking the mucin domain of GP' vs 'mock' at '18 hour',-1.1,0.0463808830435737,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-GEOD-35493,"'medulloblastoma, large-cell' vs 'normal'",1,0.0000666062566285119,
+ENSG00000134183,GNAT2,GNAT2,homo sapiens,E-MTAB-5102,'154; 1 micromolar' vs 'DMSO',-1,0.000868216640526657,

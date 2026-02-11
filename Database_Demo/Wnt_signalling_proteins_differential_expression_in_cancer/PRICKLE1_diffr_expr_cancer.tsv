@@ -1,0 +1,157 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000139174	homo sapiens	E-GEOD-63816	'erythroleukemia; ZRSR2 shRNA' vs 'normal'	7	3.47668666589068e-56	
+ENSG00000139174	homo sapiens	E-MTAB-5537	'estrogen receptor alpha shRNA' vs 'scrambled shRNA'	6.2	6.43648210882071e-7	
+ENSG00000139174	homo sapiens	E-MTAB-5175	'doxycycline-mediated expression of dominant-negative FOS' vs 'wild type'	3.7	5.66692761985727e-51	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'NCI-H460; large cell lung carcinoma; P10' vs 'NCI-H460; large cell lung carcinoma; P0'	-3.6	4.92724874318803e-8	
+ENSG00000139174	homo sapiens	E-MTAB-7591	'SOX2 overexpression' vs 'wild type' in 'U-2982'	-3.5	4.82857809344731e-97	
+ENSG00000139174	homo sapiens	E-GEOD-7835	'deferoxamine; 100 nanomolar echinomycin' vs 'deferoxamine; none'	-3.4	1.20019777029344e-7	
+ENSG00000139174	homo sapiens	E-MTAB-8677	'SPI1 -/-' vs 'SPI1 +/+'	-3.3	2.18607244424275e-159	
+ENSG00000139174	homo sapiens	E-CURD-45	'neoplasm' vs 'normal tissue adjacent to neoplasm'	3.3	4.97120811182957e-18	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HCT-15; adenocarcinoma of colon; P10' vs 'HCT-15; adenocarcinoma of colon; P0'	-3.1	2.2808591551096e-9	
+ENSG00000139174	homo sapiens	E-GEOD-66354	'supratentorial ependymoma' vs 'normal'	-3.1	3.81210722005359e-9	
+ENSG00000139174	homo sapiens	E-GEOD-22139	'DAOY M14; MYC overexpression' vs 'DAOY; vector control'	-3.1	0.00000916520976367189	
+ENSG00000139174	homo sapiens	E-GEOD-16082	'resistant to methotrexate' vs 'sensitive to methotrexate'	-3	4.18800900227016e-8	
+ENSG00000139174	homo sapiens	E-GEOD-32424	'tumor' vs 'normal'	2.9	0.00133910923632468	
+ENSG00000139174	homo sapiens	E-GEOD-22139	'DAOY M2.1; MYC overexpression' vs 'DAOY; vector control'	-2.8	0.0000052090095844652	
+ENSG00000139174	homo sapiens	E-GEOD-35493	'medulloblastoma, large-cell' vs 'normal'	-2.8	0.000190826912254872	
+ENSG00000139174	homo sapiens	E-GEOD-55048	'tumor' vs 'paratumoral tissue'	-2.6	0.00118883967917476	
+ENSG00000139174	homo sapiens	E-GEOD-49284	'EPZ6438; 10x lowest cytotoxic concentration' vs 'DMSO' in 'SUDHL6' at '6 day'	2.5	8.03945465807867e-10	
+ENSG00000139174	homo sapiens	E-GEOD-32526	'S2N; tumorigenic; monolayer' vs 'S2; non-tumorigenic; monolayer'	2.5	0.0000093885128748882	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HL-60(TB); promyelocytic leukemia; P04' vs 'HL-60(TB); promyelocytic leukemia; P0'	2.5	0.0000248271065066574	
+ENSG00000139174	homo sapiens	E-MTAB-6214	'metastatic melanoma; non-responder' vs 'normal; not applicable'	2.5	0.042975385579834	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HCT-15; adenocarcinoma of colon; P04' vs 'HCT-15; adenocarcinoma of colon; P0'	-2.4	4.36464507559442e-7	
+ENSG00000139174	homo sapiens	E-GEOD-95132	'primary tumor' vs 'adjacent non-tumor colon' in 'colorectal cancer'	-2.4	0.00000478501898545706	
+ENSG00000139174	homo sapiens	E-GEOD-33294	'liver tumor' vs 'adjacent non-tumor tissue'	-2.4	0.026916885624285	
+ENSG00000139174	homo sapiens	E-GEOD-35493	'atypical teratoid / rhabdoid tumor' vs 'normal'	-2.3	0.0000562249337002959	
+ENSG00000139174	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-LM2'	-2.2	1.39405559159821e-42	
+ENSG00000139174	homo sapiens	E-GEOD-65166	'cells permissive for late gene expression of HPV-16' vs 'control'	-2.2	2.23983706513355e-8	
+ENSG00000139174	homo sapiens	E-GEOD-41405	'androstenedione+GDNF' vs 'EtOH'	-2.2	5.2844069746739e-7	
+ENSG00000139174	homo sapiens	E-GEOD-36035	'lymphangiogenic and very metastatic' vs 'parental pool'	-2.2	0.000203335403864385	
+ENSG00000139174	homo sapiens	E-GEOD-66354	'atypical teratoid/rhabdoid tumor' vs 'normal'	-2.1	1.11249545813031e-7	
+ENSG00000139174	homo sapiens	E-GEOD-41405	'androstenedione' vs 'EtOH'	-2.1	7.6458836811371e-7	
+ENSG00000139174	homo sapiens	E-TABM-868	'GAM overexpression' vs 'wild type' in 'lipopolysaccharide; 100 nanogram per milliliter'	-2.1	0.00000147163745322406	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'A549; adenocarcinoma of lung; P04' vs 'A549; adenocarcinoma of lung; P0'	2.1	0.0000160133080036351	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HL-60(TB); promyelocytic leukemia; P10' vs 'HL-60(TB); promyelocytic leukemia; P0'	2.1	0.0000186367044698197	
+ENSG00000139174	homo sapiens	E-GEOD-22334	'cells p16-transfected' vs 'control'	-2.1	0.000710496845297802	
+ENSG00000139174	homo sapiens	E-MTAB-9767	"after autologous stem cell transplantation" vs "before autologous stem cell transplantation"	-2.1	0.00170454055627031	
+ENSG00000139174	homo sapiens	E-GEOD-61966	'501Mel; shBRG1 knockdown' vs '501Mel; control'	2	2.02390513813677e-12	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HCC-2998; colon carcinoma; P10' vs 'HCC-2998; colon carcinoma; P0'	2	6.52384171962222e-7	
+ENSG00000139174	homo sapiens	E-GEOD-51415	'tongue squamous cell carcinoma' vs 'normal' in 'vehicle'	-2	0.0000471498519420169	
+ENSG00000139174	homo sapiens	E-GEOD-35493	'primitive neuroectodermal tumor' vs 'normal'	-2	0.0020004801725049	
+ENSG00000139174	homo sapiens	E-GEOD-3325	'metastatic prostate cancer' vs 'benign prostate tumor'	-2	0.0375882646536419	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HCT-15; adenocarcinoma of colon; P01' vs 'HCT-15; adenocarcinoma of colon; P0'	-1.9	9.10652132666467e-7	
+ENSG00000139174	homo sapiens	E-GEOD-22866	'glioblastoma' vs 'control'	-1.9	0.0000432939811436134	
+ENSG00000139174	homo sapiens	E-GEOD-22139	'DAOY M14; MYC overexpression' vs 'DAOY; wild type'	-1.9	0.000118160877147072	
+ENSG00000139174	homo sapiens	E-MTAB-2581	'chronic myelogenous leukemia' vs 'normal' in 'hematopoietic stem cell'	1.9	0.00823606911506858	
+ENSG00000139174	homo sapiens	E-MTAB-7061	'HDAC1 homozygous knockout' vs 'wild type'	1.9	0.0166085846535599	
+ENSG00000139174	homo sapiens	E-GEOD-27473	'estrogen receptor alpha knockdown' vs 'control'	1.8	7.75155223468439e-7	
+ENSG00000139174	homo sapiens	E-GEOD-41405	'androstenedione+Letrozole+GDNF' vs 'EtOH'	-1.8	0.0000145205261555839	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HCC-2998; colon carcinoma; P04' vs 'HCC-2998; colon carcinoma; P0'	1.8	0.000597019350732499	
+ENSG00000139174	homo sapiens	E-MTAB-1776	'EGR2-E356K' vs 'wild type genotype'	-1.8	0.00370472067213473	
+ENSG00000139174	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'TMEM45A knockdown by siRNA'	-1.7	1.13645990411491e-13	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HL-60(TB); promyelocytic leukemia; P01' vs 'HL-60(TB); promyelocytic leukemia; P0'	1.7	0.0000159810373083062	
+ENSG00000139174	homo sapiens	E-MTAB-7025	'JQ1 (1 micromolar) and THZ1 (35 nanomolar)' vs 'none'	-1.7	0.000594538120631347	
+ENSG00000139174	homo sapiens	E-GEOD-11151	'chromophobe renal cell carcinoma' vs 'normal' in 'adult'	-1.7	0.020881834679076	
+ENSG00000139174	homo sapiens	E-GEOD-10696	'gefitinib resistant' vs 'gefitinib sensitive'	1.6	0.0000018771042857548	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'pancreatic adenocarcinoma' vs 'normal'	-1.6	0.0000131221877644156	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'colorectal carcinoma' vs 'normal'	-1.6	0.000120664195689566	
+ENSG00000139174	homo sapiens	E-GEOD-22139	'DAOY M2.1; MYC overexpression' vs 'DAOY; wild type'	-1.6	0.000136359789649464	
+ENSG00000139174	homo sapiens	E-GEOD-35493	'medulloblastoma' vs 'normal'	-1.6	0.000561957393422475	
+ENSG00000139174	homo sapiens	E-MTAB-7039	'neoplasm' vs 'normal tissue adjacent to tumour'	-1.6	0.00203942560418763	
+ENSG00000139174	homo sapiens	E-MTAB-6120	'adiponectin; 30 microgram per milliliter' vs 'none' in 'MDAMB231'	-1.5	2.84546823867366e-22	
+ENSG00000139174	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'scrambled siRNA'	-1.5	2.80845749891106e-10	
+ENSG00000139174	homo sapiens	E-MTAB-9207	'KRAS-G13D expression' vs 'wild type genotype' in 'CFIm25 siRNA'	1.5	0.00000136931058280846	
+ENSG00000139174	homo sapiens	E-GEOD-26656	'M24met; Wnt-1 overexpressing; ' vs 'M24met; wild type; '	-1.5	0.00000562005102507112	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'AsPC-1; pancreatic adenocarcinoma; P10' vs 'AsPC-1; pancreatic adenocarcinoma; P0'	-1.5	0.0000137011431148188	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'glioblastoma' vs 'normal'	-1.5	0.0000170663860482609	
+ENSG00000139174	homo sapiens	E-MTAB-7884	'DGAT2 homozygous knockout' vs 'wild type genotype' in 'fatty acids (800 micromolar) and fructose (5.5 millimolar)'	1.5	0.0000248237708411318	
+ENSG00000139174	homo sapiens	E-GEOD-38959	'breast cancer; breast' vs 'normal; breast'	1.5	0.000447255628067593	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'UACC-62; melanoma; P04' vs 'UACC-62; melanoma; P0'	1.5	0.00161593268691399	
+ENSG00000139174	homo sapiens	E-GEOD-41586	'5-aza-deoxy-cytidine; 5 micromolar' vs 'none'	1.5	0.00373355939487468	
+ENSG00000139174	homo sapiens	E-GEOD-63252	'p53KO; tunicamycin' vs 'wild type; tunicamycin'	1.5	0.0317957330165221	
+ENSG00000139174	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	-1.4	1.40118646827871e-8	
+ENSG00000139174	homo sapiens	E-GEOD-6400	'1.25 micromolar dose of sapphyrin PCI-2050' vs '5 percent dose of mannitol'	-1.4	3.41503383707736e-7	
+ENSG00000139174	homo sapiens	E-GEOD-55859	'acquired TRAIL-resistance' vs 'control'	-1.4	7.37395177077079e-7	
+ENSG00000139174	homo sapiens	E-MTAB-3619	'UV' vs 'none' in '(no brct expression) GFP control'	-1.4	0.00000223264185807821	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'breast carcinoma' vs 'normal'	-1.4	0.0000239382413889807	
+ENSG00000139174	homo sapiens	E-GEOD-33455	'DU-145; converted to docetaxel resistant cells' vs 'DU-145; none'	-1.4	0.0000241616077235482	
+ENSG00000139174	homo sapiens	E-GEOD-40595	'ovarian cancer' vs 'normal' in 'stromal cell'	1.4	0.000269289868199727	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'hepatobiliary carcinoma' vs 'normal'	-1.4	0.000772013567115149	
+ENSG00000139174	homo sapiens	E-TABM-763	'CLL trisomy 12 high zap IGHV unmutated' vs 'normal'	1.4	0.0183503448966485	
+ENSG00000139174	homo sapiens	E-GEOD-56788	'GLI1 knock-down' vs 'mock'	1.3	7.8571765839283e-14	
+ENSG00000139174	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-MB-231'	-1.3	1.7235168951594e-13	
+ENSG00000139174	homo sapiens	E-GEOD-21656	'resistant to cisplatin' vs 'sensitive to cisplatin'	-1.3	0.00000324994685422921	
+ENSG00000139174	homo sapiens	E-TABM-868	'siGAM knockdown' vs 'wild type' in 'lipopolysaccharide; 100 nanogram per milliliter'	-1.3	0.00000404334598843145	
+ENSG00000139174	homo sapiens	E-MTAB-7033	'p63 knockdown by siRNA' vs 'scrambled siRNA' in 'L3.6pl'	1.3	0.00000615542800505863	
+ENSG00000139174	homo sapiens	E-GEOD-41405	'androstenedione+Letrozole' vs 'EtOH'	-1.3	0.0000277997885593511	
+ENSG00000139174	homo sapiens	E-MEXP-3025	'PE d/10 adherent culture' vs 'sphere culture'	1.3	0.000117367199958925	
+ENSG00000139174	homo sapiens	E-MTAB-9209	'5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide; 0.4 millimolar' vs 'none'	-1.3	0.000199271717179776	
+ENSG00000139174	homo sapiens	E-GEOD-36509	'LBH589 (panobinostat)' vs 'DMSO' in 'H295R'	1.3	0.000302481285073834	
+ENSG00000139174	homo sapiens	E-GEOD-26966	'pituitary cancer' vs 'normal'	1.3	0.00051476220592303	
+ENSG00000139174	homo sapiens	E-GEOD-50161	'Astrocytoma, Pilocytic' vs 'normal'	-1.3	0.00154543403128141	
+ENSG00000139174	homo sapiens	E-GEOD-52194	'triple-negative breast cancer; breast carcinoma' vs 'normal'	1.3	0.00693463357418697	
+ENSG00000139174	homo sapiens	E-GEOD-40968	'MCF-7; ACSL4-transfected' vs 'MCF-7; control'	-1.3	0.0073019410449619	
+ENSG00000139174	homo sapiens	E-GEOD-7835	'deferoxamine; HIF-1a siRNA' vs 'deferoxamine; none'	-1.2	0.00000191252082961334	
+ENSG00000139174	homo sapiens	E-GEOD-41678	'MDAMB231; cocultured with fibroblast HFF1' vs 'MDAMB231; normal'	1.2	0.00000248554460071988	
+ENSG00000139174	homo sapiens	E-GEOD-8597	'DMSO control; 17beta-estradiol' vs 'DMSO control; control (ethanol vehicle)'	-1.2	0.00000281468856045363	
+ENSG00000139174	homo sapiens	E-GEOD-61973	'PARK2 overexpression' vs 'control'	-1.2	0.0000037908334406993	
+ENSG00000139174	homo sapiens	E-GEOD-68086	'non-small cell lung carcinoma' vs 'normal'	-1.2	0.0000701732284427447	
+ENSG00000139174	homo sapiens	E-GEOD-59612	'contrast-enhancing core; glioma' vs 'normal'	-1.2	0.000083528596133473	
+ENSG00000139174	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; lipopolysaccharide and interferon gamma; 1 day' vs 'none; none; 0 day'	-1.2	0.000117509717434402	
+ENSG00000139174	homo sapiens	E-GEOD-12854	'PKA RII-beta over expression' vs 'wild type'	1.2	0.000125340028107805	
+ENSG00000139174	homo sapiens	E-GEOD-16089	'resistant to methotrexate' vs 'sensitive to methotrexate'	-1.2	0.000147377657477978	
+ENSG00000139174	homo sapiens	E-GEOD-52707	'SKR6LR cells resistant to lapanitib' vs 'SKR6 cells with elevated HER2 expression'	1.2	0.000169244267224262	
+ENSG00000139174	homo sapiens	E-GEOD-50161	'medulloblastoma' vs 'normal'	-1.2	0.000255522478439753	
+ENSG00000139174	homo sapiens	E-GEOD-19639	'long term estrogen deprived' vs 'control' in 'ZR75-1'	1.2	0.000415960528152953	
+ENSG00000139174	homo sapiens	E-GEOD-50161	'glioblastoma' vs 'normal'	-1.2	0.000497544773144524	
+ENSG00000139174	homo sapiens	E-GEOD-13309	'tobacco smoke condensate 3 microgram per milliliter' vs 'control' in 'Calu-6'	-1.2	0.00163290788201034	
+ENSG00000139174	homo sapiens	E-GEOD-66354	'pilocytic astrocytoma' vs 'normal'	-1.2	0.00200015124286913	
+ENSG00000139174	homo sapiens	E-GEOD-63252	'p53KO; tunicamycin' vs 'p53KO; control'	1.2	0.0125921581516466	
+ENSG00000139174	homo sapiens	E-MTAB-5231	'squamous cell carcinoma' vs 'normal tissue adjacent to squamous cell carcinoma'	-1.2	0.0365110147720553	
+ENSG00000139174	homo sapiens	E-MTAB-6120	'adiponectin; 5 microgram per milliliter' vs 'none' in 'MDAMB231'	-1.1	5.35824496214769e-16	
+ENSG00000139174	homo sapiens	E-MTAB-3073	'glioblastoma multiforme' vs 'normal'	-1.1	2.2926783699601e-14	
+ENSG00000139174	homo sapiens	E-GEOD-55092	'neoplasm' vs 'normal tissue adjacent to neoplasm' in 'liver'	-1.1	7.75192407097702e-13	
+ENSG00000139174	homo sapiens	E-GEOD-43458	'smoker; lung adenocarcinoma' vs 'never smoked; normal'	-1.1	1.42970387845575e-9	
+ENSG00000139174	homo sapiens	E-GEOD-35428	'ethanol; 17beta-estradiol' vs 'ethanol; control'	-1.1	1.43203461816991e-9	
+ENSG00000139174	homo sapiens	E-GEOD-81089	'tumor tissue' vs 'non-malignant tissue'	-1.1	2.40923718255068e-7	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HOP-92; large cell undifferentiated lung; P04' vs 'HOP-92; large cell undifferentiated lung; P0'	1.1	0.00000314960903912237	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HOP-92; large cell undifferentiated lung; P01' vs 'HOP-92; large cell undifferentiated lung; P0'	1.1	0.00000402340047309065	
+ENSG00000139174	homo sapiens	E-GEOD-48433	'HOP-92; large cell undifferentiated lung; P10' vs 'HOP-92; large cell undifferentiated lung; P0'	1.1	0.0000384012864568281	
+ENSG00000139174	homo sapiens	E-GEOD-32526	'S2N; tumorigenic; spheres' vs 'S2; non-tumorigenic; spheres'	1.1	0.0000699154849037833	
+ENSG00000139174	homo sapiens	E-GEOD-53757	'tumor' vs 'normal' in 'stage 3'	-1.1	0.000130229958381426	
+ENSG00000139174	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; lipopolysaccharide; 1 day' vs 'none; none; 0 day'	-1.1	0.000308229351093917	
+ENSG00000139174	homo sapiens	E-GEOD-56026	'STAT1 siRNA; interferon gamma; 250 micromolar' vs 'control; interferon gamma; 250 micromolar'	-1.1	0.000467239538642584	
+ENSG00000139174	homo sapiens	E-GEOD-40776	'expressing O6-methylguanine methyltransferase' vs 'control'	-1.1	0.000517223626264496	
+ENSG00000139174	homo sapiens	E-GEOD-6400	'5 microgram per milliliter dose of actinomycin D' vs '5 percent dose of mannitol'	-1.1	0.000715737041453368	
+ENSG00000139174	homo sapiens	E-GEOD-45120	'epithelial-to-mesenchymal transition' vs 'normal'	1.1	0.000999608571401789	
+ENSG00000139174	homo sapiens	E-GEOD-71671	'EZH2 inhibitor; 10 micromolar' vs 'none'	-1.1	0.00171869609983999	
+ENSG00000139174	homo sapiens	E-GEOD-51005	'after docetaxel chemotherapy and androgen deprivation therapy' vs 'before docetaxel chemotherapy and androgen deprivation therapy'	1.1	0.00704252443369407	
+ENSG00000139174	homo sapiens	E-GEOD-12606	'metastatic tissue' vs 'normal tissue adjacent to neoplasm' in 'clear cell renal cell carcinoma'	-1.1	0.0131887297825208	
+ENSG00000139174	homo sapiens	E-GEOD-13487	'doxycycline' vs 'none' in 'shB-Raf (doxycycline inducible)'	1.1	0.0146900447142142	
+ENSG00000139174	homo sapiens	E-GEOD-21612	'xenografted parental' vs 'cultured parental' in 'serum-containing medium'	-1.1	0.0186620681934541	
+ENSG00000139174	homo sapiens	E-GEOD-55541	'CA-PDGFRA + sh-p53' vs 'mock'	-1.1	0.0265953368653277	
+ENSG00000139174	homo sapiens	E-MTAB-8677	'SPI1 +/-' vs 'SPI1 +/+'	-1	3.17267060407096e-22	
+ENSG00000139174	homo sapiens	E-MTAB-3073	'astrocytoma' vs 'normal'	-1	1.06089099354684e-10	
+ENSG00000139174	homo sapiens	E-MTAB-7847	'Sorafenib; 5 micromolar' vs 'vehicle' in 'HuH-7'	1	6.63438560331796e-9	
+ENSG00000139174	homo sapiens	E-GEOD-8597	'cycloheximide; 17beta-estradiol' vs 'DMSO control; 17beta-estradiol'	1	8.25247494757585e-8	
+ENSG00000139174	homo sapiens	E-GEOD-43458	'never smoked; lung adenocarcinoma' vs 'never smoked; normal'	-1	1.18644390040469e-7	
+ENSG00000139174	homo sapiens	E-GEOD-38678	'CLS1; 6 passages' vs 'CLS1; co-culture with CAF to generate sphere'	1	0.00000136582983206772	
+ENSG00000139174	homo sapiens	E-GEOD-40584	'Nkx2-1 overexpression' vs 'wild type'	-1	0.00000538513037435627	
+ENSG00000139174	homo sapiens	E-GEOD-46493	'Nutlin-3; 10 micromolar' vs 'DMSO; 0.1 percent'	-1	0.00000609613964419793	
+ENSG00000139174	homo sapiens	E-MTAB-7033	'p63 knockdown by siRNA' vs 'scrambled siRNA' in 'BxPC-3'	1	0.00000652411551960808	
+ENSG00000139174	homo sapiens	E-GEOD-46493	'doxorubicin; 0.6 microgram per milliliter' vs 'none'	-1	0.00000906559577745886	
+ENSG00000139174	homo sapiens	E-GEOD-7307	'CXCL12, 75 nanomolar; 6 hour' vs 'none; 6 hour' in 'MDAMB231; adenocarcinoma; mammary gland'	-1	0.0000213020818184873	
+ENSG00000139174	homo sapiens	E-GEOD-13763	'CXCR4 shRNA II' vs 'none'	-1	0.0000243316954222868	
+ENSG00000139174	homo sapiens	E-GEOD-44077	'lung carcinoma' vs 'normal'	-1	0.000030564156636562	
+ENSG00000139174	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '54 hour'	1	0.000048746506391028	
+ENSG00000139174	homo sapiens	E-MTAB-8198	'EPZ004777; 6.4 micromolar' vs 'dimethyl sulfoxide; 1E-08 molar' in 'PEO1'	1	0.0000776882510190866	
+ENSG00000139174	homo sapiens	E-GEOD-42781	'delta-her2 overexpression' vs 'control'	-1	0.0000920210624733473	
+ENSG00000139174	homo sapiens	E-GEOD-59234	'SOX2 siRNA' vs 'negative control' in '2102Ep'	-1	0.000228948313848448	
+ENSG00000139174	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; interferon gamma; 1 day' vs 'none; 3 day' in 'none; none; 0 day'	-1	0.000259990364724442	
+ENSG00000139174	homo sapiens	E-TABM-282	'clear cell renal carcinoma' vs 'normal'	-1	0.000426463750279443	
+ENSG00000139174	homo sapiens	E-MTAB-9207	'KRAS-G13D expression' vs 'wild type genotype' in 'scrambled siRNA'	1	0.00239088240542482	
+ENSG00000139174	homo sapiens	E-GEOD-21354	'astrocytic glioma' vs 'normal'	-1	0.00352202711788909	
+ENSG00000139174	homo sapiens	E-GEOD-10233	'cyclin T1 shRNA' vs 'control shRNA'	1	0.0045852098351146	
+ENSG00000139174	homo sapiens	E-GEOD-31019	'interferon-alpha + U0126' vs 'none' in 'HT1080' at '12 hour'	-1	0.0134699378097377	
+ENSG00000139174	homo sapiens	E-MTAB-5316	'CD40L; 500 nanogram per milliliter' vs 'DMSO' in 'HL-60; acute promyelocytic leukemia'	1	0.0163577700153764	
+ENSG00000139174	homo sapiens	E-MTAB-5231	'adenocarcinoma' vs 'normal tissue adjacent to adenocarcinoma'	-1	0.0460630692033709	

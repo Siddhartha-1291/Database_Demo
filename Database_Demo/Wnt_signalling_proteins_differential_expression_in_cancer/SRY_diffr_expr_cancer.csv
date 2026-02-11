@@ -1,0 +1,9 @@
+Gene,Protein,Gene Name(s),Species,Experiment accession,Comparison,log_2 fold change,Adjusted p-value,t-statistic
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-59612,'contrast-enhancing core; glioma' vs 'normal',3.5,0.000087950843481855,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-32424,'tumor' vs 'normal',-3.5,0.00656033983301336,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-51415,'tongue squamous cell carcinoma' vs 'normal' in 'vehicle',2.9,0.0358740634199532,
+ENSG00000184895,SRY,SRY,homo sapiens,E-MTAB-4054,'esophageal adenocarcinoma' vs 'normal',-2.1,0.0419767854799923,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-6907,'5400 micromolar n-nitrosodimethylamine' vs 'none',-1.4,0.00455020502014644,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-35493,"'medulloblastoma, large-cell' vs 'normal'",1.1,0.00116382479929241,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-6907,'20 micromolar potassium dichromate' vs 'none',-1.1,0.00764424052739395,
+ENSG00000184895,SRY,SRY,homo sapiens,E-GEOD-40595,'ovarian cancer' vs 'normal' in 'epithelial cell',1,7.40357764601124e-9,

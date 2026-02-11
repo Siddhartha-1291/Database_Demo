@@ -1,0 +1,16 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000085741	homo sapiens	E-GEOD-51415	'tongue squamous cell carcinoma' vs 'normal' in 'vehicle'	4.8	3.76017118603736e-10	
+ENSG00000085741	homo sapiens	E-GEOD-63816	'erythroleukemia; ZRSR2 shRNA' vs 'normal'	4.8	2.20030961185188e-8	
+ENSG00000085741	homo sapiens	E-CURD-45	'neoplasm' vs 'normal tissue adjacent to neoplasm'	-3.8	3.99409414673307e-10	
+ENSG00000085741	homo sapiens	E-GEOD-48433	'HCC-2998; colon carcinoma; P10' vs 'HCC-2998; colon carcinoma; P0'	3.6	3.2792784258446e-9	
+ENSG00000085741	homo sapiens	E-MTAB-6756	'siRNA double knockdown of HNF4A and GATA6' vs 'scrambled siRNA'	3.2	1.04686473573607e-19	
+ENSG00000085741	homo sapiens	E-GEOD-48433	'HCC-2998; colon carcinoma; P01' vs 'HCC-2998; colon carcinoma; P0'	3	3.04985044889245e-7	
+ENSG00000085741	homo sapiens	E-GEOD-95132	'primary tumor' vs 'adjacent non-tumor colon' in 'colorectal cancer'	2.8	0.0000882557330645054	
+ENSG00000085741	homo sapiens	E-GEOD-48433	'COLO 205; adenocarcinoma of colon; P04' vs 'COLO 205; adenocarcinoma of colon; P0'	2.7	0.00000125815323577601	
+ENSG00000085741	homo sapiens	E-MTAB-4054	'esophageal adenocarcinoma' vs 'Barrett’s esophagus; low-grade dysplasia'	2.7	0.00462714947722527	
+ENSG00000085741	homo sapiens	E-GEOD-48433	'HCC-2998; colon carcinoma; P04' vs 'HCC-2998; colon carcinoma; P0'	2.6	0.00177439090911861	
+ENSG00000085741	homo sapiens	E-MTAB-11313	'ERO1 knockout' vs 'wild type genotype' in 'ISRIB (trans-isomer); 2.5 milligram per kilogram'	-2.5	0.0166809978124202	
+ENSG00000085741	homo sapiens	E-MTAB-6647	'hypoxia' vs 'normoxia' in 'MDAMB468; Plasmax media'	2.4	1.99618570772451e-10	
+ENSG00000085741	homo sapiens	E-MTAB-10304	'lapatinib; 500 nanomolar; 7 day' vs 'dimethyl sulfoxide; 1 day'	2.4	0.00331053354289678	
+ENSG00000085741	homo sapiens	E-MTAB-6756	'siRNA knockdown of GATA6' vs 'scrambled siRNA'	2.3	1.61676247809047e-15	
+ENSG00000085741	homo sapiens	E-MEXP-1996	'ACO2-V5 overexpression 

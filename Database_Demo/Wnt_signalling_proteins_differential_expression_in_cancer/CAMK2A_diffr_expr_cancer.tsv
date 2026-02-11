@@ -1,0 +1,56 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000070808	homo sapiens	E-MTAB-8480	'MEF2D-HNFNPUL1 knockdown by siRNA' vs 'luciferase siRNA'	6.3	2.63592782229011e-40	
+ENSG00000070808	homo sapiens	E-GEOD-59612	'contrast-enhancing core; glioma' vs 'normal'	-5.9	1.26095444877036e-32	
+ENSG00000070808	homo sapiens	E-GEOD-22866	'glioblastoma' vs 'control'	-5.1	6.73324006595951e-15	
+ENSG00000070808	homo sapiens	E-GEOD-35493	'medulloblastoma' vs 'normal'	-4.8	8.17057517665872e-10	
+ENSG00000070808	homo sapiens	E-MTAB-7591	'SOX2 overexpression' vs 'wild type' in 'U-2982'	-4.4	1.42341212942082e-83	
+ENSG00000070808	homo sapiens	E-GEOD-35493	'atypical teratoid / rhabdoid tumor' vs 'normal'	-4.4	9.26505325535721e-11	
+ENSG00000070808	homo sapiens	E-MTAB-6214	'metastatic melanoma; non-responder' vs 'normal; not applicable'	-4.4	5.62521612212635e-7	
+ENSG00000070808	homo sapiens	E-GEOD-35493	'glioblastoma' vs 'normal'	-4.3	3.20672464124885e-7	
+ENSG00000070808	homo sapiens	E-GEOD-35493	'medulloblastoma, large-cell' vs 'normal'	-4.2	0.00026984443374845	
+ENSG00000070808	homo sapiens	E-GEOD-35493	'primitive neuroectodermal tumor' vs 'normal'	-4.1	0.0000107992271599849	
+ENSG00000070808	homo sapiens	E-MTAB-6214	'metastatic melanoma; responder' vs 'normal; not applicable'	-4	3.7810984602558e-7	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'breast carcinoma' vs 'normal'	-3.9	3.22283934449965e-14	
+ENSG00000070808	homo sapiens	E-MTAB-7453	'PLX4720; 1 micromolar' vs 'none'	3.9	0.000290159231052472	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'pancreatic adenocarcinoma' vs 'normal'	-3.8	4.30339178756146e-11	
+ENSG00000070808	homo sapiens	E-GEOD-50161	'medulloblastoma' vs 'normal'	-3.7	3.69855669307873e-10	
+ENSG00000070808	homo sapiens	E-GEOD-66354	'supratentorial ependymoma' vs 'normal'	-3.3	0.0000255748467316842	
+ENSG00000070808	homo sapiens	E-GEOD-66354	'atypical teratoid/rhabdoid tumor' vs 'normal'	-3.2	2.18187688780499e-7	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'colorectal carcinoma' vs 'normal'	-3.1	4.44734692088137e-9	
+ENSG00000070808	homo sapiens	E-GEOD-50161	'glioblastoma' vs 'normal'	-3	1.43149899857922e-8	
+ENSG00000070808	homo sapiens	E-GEOD-50161	'Astrocytoma, Pilocytic' vs 'normal'	-2.9	0.00000337962959492915	
+ENSG00000070808	homo sapiens	E-GEOD-66354	'pilocytic astrocytoma' vs 'normal'	-2.9	0.00000399752969789236	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'hepatobiliary carcinoma' vs 'normal'	-2.7	0.0000467401121882505	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'non-small cell lung carcinoma' vs 'normal'	-2.4	3.30398575292106e-7	
+ENSG00000070808	homo sapiens	E-GEOD-21354	'astrocytic glioma' vs 'normal'	-2.4	0.00106746968315458	
+ENSG00000070808	homo sapiens	E-GEOD-21354	'oligodendroglioma' vs 'normal'	-2.4	0.0177830414263754	
+ENSG00000070808	homo sapiens	E-GEOD-61966	'501Mel; shBRG1 knockdown' vs '501Mel; control'	-2.3	0.000489071800350822	
+ENSG00000070808	homo sapiens	E-GEOD-52194	'triple-negative breast cancer; breast carcinoma' vs 'normal'	2.3	0.00178140191126871	
+ENSG00000070808	homo sapiens	E-MTAB-7039	'neoplasm' vs 'normal tissue adjacent to tumour'	-2.2	0.0149831037736398	
+ENSG00000070808	homo sapiens	E-MEXP-567	'glioblastoma' vs 'normal'	-2.1	0.000847620842637925	
+ENSG00000070808	homo sapiens	E-MEXP-567	'astrocytoma' vs 'normal'	-2.1	0.00192192527559433	
+ENSG00000070808	homo sapiens	E-GEOD-68086	'glioblastoma' vs 'normal'	-2	0.0000623384852426757	
+ENSG00000070808	homo sapiens	E-MTAB-4054	'esophageal adenocarcinoma' vs 'normal'	2	0.00164007263754091	
+ENSG00000070808	homo sapiens	E-MTAB-3073	'glioblastoma multiforme' vs 'normal'	-1.9	4.1156566480473e-26	
+ENSG00000070808	homo sapiens	E-MTAB-3073	'oligodendroglioma' vs 'normal'	-1.9	6.54266263191981e-18	
+ENSG00000070808	homo sapiens	E-MTAB-7745	'dexamethasone; 1 micromolar' vs 'vehicle'	1.9	0.000418301354657951	
+ENSG00000070808	homo sapiens	E-MTAB-3073	'astrocytoma' vs 'normal'	-1.8	2.05090703314355e-23	
+ENSG00000070808	homo sapiens	E-GEOD-50760	'colorectal cancer metastatic in the liver' vs 'normal'	-1.7	0.000018919063862617	
+ENSG00000070808	homo sapiens	E-GEOD-51415	'tongue squamous cell carcinoma' vs 'normal' in 'vehicle'	-1.7	0.0371193235979425	
+ENSG00000070808	homo sapiens	E-MTAB-5021	'peripheral zone of prostate' vs 'transition zone of prostate' in 'benign'	-1.6	5.29137906179768e-8	
+ENSG00000070808	homo sapiens	E-MTAB-8677	'SPI1 +/-' vs 'SPI1 +/+'	1.6	0.00000269150786283786	
+ENSG00000070808	homo sapiens	E-MTAB-7884	'DGAT2 homozygous knockout' vs 'wild type genotype' in 'fatty acids (800 micromolar) and fructose (5.5 millimolar)'	1.6	0.00430283702314707	
+ENSG00000070808	homo sapiens	E-MTAB-5933	'oral squamous cell carcinoma; neoplasm' vs 'normal; 5 mm beyond neoplasm as visible by narrow band imaging' in 'mouth floor'	-1.5	0.00633483843983428	
+ENSG00000070808	homo sapiens	E-GEOD-40595	'ovarian cancer' vs 'normal' in 'epithelial cell'	1.4	8.16451844809796e-11	
+ENSG00000070808	homo sapiens	E-GEOD-81089	'tumor tissue' vs 'non-malignant tissue'	-1.4	2.14735001368788e-7	
+ENSG00000070808	homo sapiens	E-MTAB-11313	'ERO1 knockout' vs 'wild type genotype' in 'paclitaxel; 15 milligram per kilogram'	-1.4	0.0170020420716461	
+ENSG00000070808	homo sapiens	E-GEOD-52194	'non-triple-negative breast cancer; breast carcinoma' vs 'normal'	1.4	0.0259434174335124	
+ENSG00000070808	homo sapiens	E-GEOD-21750	'malignant mesothelioma; wild type' vs 'normal; wild type'	-1.2	6.76571615909863e-7	
+ENSG00000070808	homo sapiens	E-GEOD-59612	'non-enhancing margin; glioma' vs 'normal'	-1.2	0.0274239807026011	
+ENSG00000070808	homo sapiens	E-GEOD-48403	'after androgen ablation therapy' vs 'before androgen ablation therapy'	1.2	0.0276580137867381	
+ENSG00000070808	homo sapiens	E-GEOD-29598	'formalin-fixed,parafin-embedded xenograft; messageAmp Premier methodology' vs 'fresh-frozen xenograft; normal'	1.1	4.76140520568324e-11	
+ENSG00000070808	homo sapiens	E-MTAB-9206	'ELP3 shRNA' vs 'scrambled shRNA'	1.1	0.0227240699656605	
+ENSG00000070808	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	-1	0.0000702084799664567	
+ENSG00000070808	homo sapiens	E-GEOD-63776	'TCF7L2 siRNA' vs 'control'	1	0.000077306805626168	
+ENSG00000070808	homo sapiens	E-MEXP-3628	'osteosarcoma' vs 'normal'	1	0.000817867784467345	
+ENSG00000070808	homo sapiens	E-MTAB-8677	'SPI1 -/-' vs 'SPI1 +/+'	1	0.0117179124125896	

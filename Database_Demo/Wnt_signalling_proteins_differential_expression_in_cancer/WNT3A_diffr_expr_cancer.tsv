@@ -1,0 +1,28 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000154342	homo sapiens	E-MTAB-7613	'human cytomegalovirus (Towne strain)' vs 'none'	7.6	4.75342136889992e-8	
+ENSG00000154342	homo sapiens	E-MTAB-9207	'KRAS-G13D expression' vs 'wild type genotype' in 'CFIm25 siRNA'	-5.2	5.46746066055048e-68	
+ENSG00000154342	homo sapiens	E-GEOD-55048	'tumor' vs 'paratumoral tissue'	4.6	0.000028403827749467	
+ENSG00000154342	homo sapiens	E-CURD-45	'neoplasm' vs 'normal tissue adjacent to neoplasm'	4.2	0.00250354167113319	
+ENSG00000154342	homo sapiens	E-MTAB-5537	'estrogen receptor alpha shRNA' vs 'scrambled shRNA'	-4.2	0.00326581282789784	
+ENSG00000154342	homo sapiens	E-MTAB-10317	'lapatinib; 500 nanomolar' vs 'none' in 'scrambled siRNA'	4.2	0.0266313753779465	
+ENSG00000154342	homo sapiens	E-MTAB-4054	'esophageal adenocarcinoma' vs 'normal'	-4.1	1.53042298196496e-15	
+ENSG00000154342	homo sapiens	E-MTAB-567	'tumor tissue' vs 'adjacent non-tumor tissue'	-3.9	2.03307640679555e-9	
+ENSG00000154342	homo sapiens	E-MTAB-7061	'MTF2 homozygous knockout' vs 'wild type'	3.9	0.0000291489743641329	
+ENSG00000154342	homo sapiens	E-MTAB-4054	'Barrett’s esophagus; low-grade dysplasia' vs 'normal'	-3.3	0.00001763704711233	
+ENSG00000154342	homo sapiens	E-MTAB-5678	'squamous cell carcinoma' vs 'normal'	2.5	0.0000028839115443752	
+ENSG00000154342	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	-2.4	4.80490878974559e-8	
+ENSG00000154342	homo sapiens	E-GEOD-81089	'tumor tissue' vs 'non-malignant tissue'	-2.3	0.00000499169615539433	
+ENSG00000154342	homo sapiens	E-MTAB-7745	'dexamethasone; 1 micromolar' vs 'vehicle'	-2.2	2.31975682821816e-10	
+ENSG00000154342	homo sapiens	E-GEOD-56677	'Human betacoronavirus 2c England-Qatar/2012; 24 hour' vs 'mock; 18 hour'	2.1	5.77242287884004e-7	
+ENSG00000154342	homo sapiens	E-GEOD-56788	'SAP130 knock-down' vs 'mock'	-2	3.52983856369111e-9	
+ENSG00000154342	homo sapiens	E-MTAB-9207	'KRAS-G13D expression' vs 'wild type genotype' in 'scrambled siRNA'	-2	0.00000212247190682279	
+ENSG00000154342	homo sapiens	E-GEOD-56677	'Human betacoronavirus 2c England-Qatar/2012' vs 'mock' at '18 hour'	1.8	4.35483566462436e-7	
+ENSG00000154342	homo sapiens	E-GEOD-68086	'breast carcinoma' vs 'normal'	-1.8	0.0323177629678883	
+ENSG00000154342	homo sapiens	E-GEOD-68086	'pancreatic adenocarcinoma' vs 'normal'	-1.8	0.0426294797431748	
+ENSG00000154342	homo sapiens	E-GEOD-43767	'lung adenocarcinoma' vs 'normal' in 'adult'	-1.5	4.47735076213105e-10	
+ENSG00000154342	homo sapiens	E-GEOD-56677	'Human betacoronavirus 2c England-Qatar/2012' vs 'mock' at '12 hour'	1.5	0.0213992225045028	
+ENSG00000154342	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to C terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-1.5	0.0377210744566892	
+ENSG00000154342	homo sapiens	E-MTAB-7433	'KDM5-inh1' vs 'dimethyl sulfoxide' in '1 micromolar'	1.4	0.00000112155900526473	
+ENSG00000154342	homo sapiens	E-GEOD-51403	'17beta-estradiol; 10 nanomolar' vs 'vehicle'	-1	0.0000981321509559139	
+ENSG00000154342	homo sapiens	E-GEOD-39121	'lentivirus harboring shRNA of both GATA6 and HOPX' vs 'control'	-1	0.000346922719939934	
+ENSG00000154342	homo sapiens	E-GEOD-59251	'ZNA; 30 micromolar' vs 'DMSO' at '12 hour'	-1	0.00235944372054138	

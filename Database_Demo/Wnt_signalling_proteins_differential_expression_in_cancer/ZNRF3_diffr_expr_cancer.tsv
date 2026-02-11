@@ -1,0 +1,115 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000183579	homo sapiens	E-GEOD-6400	'5 microgram per milliliter dose of actinomycin D' vs '5 percent dose of mannitol'	-3.9	0.00000260575123839642	
+ENSG00000183579	homo sapiens	E-MTAB-8480	'MEF2D-HNFNPUL1 knockdown by siRNA' vs 'luciferase siRNA'	3.7	1.36014391327291e-69	
+ENSG00000183579	homo sapiens	E-GEOD-37003	'anti-m6A' vs 'none'	3.4	0.000290927431820282	
+ENSG00000183579	homo sapiens	E-GEOD-7835	'deferoxamine; 100 nanomolar echinomycin' vs 'deferoxamine; none'	-3.1	2.40373598128875e-8	
+ENSG00000183579	homo sapiens	E-MTAB-3619	'UV' vs 'none' in '(no brct expression) GFP control'	-3.1	0.0000021015191472739	
+ENSG00000183579	homo sapiens	E-GEOD-18105	'metastasis; tumor' vs 'metastasis; normal adjacent tissue'	3	0.000450895382716296	
+ENSG00000183579	homo sapiens	E-MEXP-3496	'Enterococcus faecalis' at '1 day' vs 'none' at '1 day'	-2.9	1.31431345882422e-7	
+ENSG00000183579	homo sapiens	E-MTAB-3619	'UV' vs 'none' in 'brct expression'	-2.9	5.23945375639171e-7	
+ENSG00000183579	homo sapiens	E-GEOD-55048	'tumor' vs 'paratumoral tissue'	2.8	2.36535380968621e-10	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'HT-29; adenocarcinoma of colon; P04' vs 'HT-29; adenocarcinoma of colon; P0'	-2.7	4.40136951320478e-9	
+ENSG00000183579	homo sapiens	E-GEOD-18105	'metastatic recurrence; tumor' vs 'metastatic recurrence; normal adjacent tissue'	2.7	0.000234039308976665	
+ENSG00000183579	homo sapiens	E-GEOD-63816	'erythroleukemia; ZRSR2 shRNA' vs 'normal'	2.5	0.0000405661650423146	
+ENSG00000183579	homo sapiens	E-MTAB-10304	'lapatinib; 500 nanomolar; 7 day' vs 'dimethyl sulfoxide; 1 day'	-2.4	4.97807895902954e-40	
+ENSG00000183579	homo sapiens	E-GEOD-18105	'non metastasis; tumor' vs 'non metastasis; normal adjacent tissue'	2.4	2.84956643866587e-10	
+ENSG00000183579	homo sapiens	E-GEOD-11941	'100 microgram per milliliter trovafloxacin' vs 'none'	2.3	0.0000862582740736618	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'HT-29; adenocarcinoma of colon; P10' vs 'HT-29; adenocarcinoma of colon; P0'	-2.2	0.00000305260470939271	
+ENSG00000183579	homo sapiens	E-MTAB-9712	'RRx-1; 20 micromolar' vs 'none'	-2	3.44630290612859e-32	
+ENSG00000183579	homo sapiens	E-GEOD-76987	'colon adenocarcinoma' vs 'normal'	2	4.24333858549762e-13	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'AsPC-1; pancreatic adenocarcinoma; P01' vs 'AsPC-1; pancreatic adenocarcinoma; P0'	-2	0.000403684413528251	
+ENSG00000183579	homo sapiens	E-GEOD-12854	'PKA RI-alpha over expression' vs 'wild type'	2	0.000584002318752	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'HT-29; adenocarcinoma of colon; P01' vs 'HT-29; adenocarcinoma of colon; P0'	-1.9	5.27233165216041e-8	
+ENSG00000183579	homo sapiens	E-GEOD-11285	'enzastaurin' vs 'DMSO' at '18 hour'	1.9	1.95585524445906e-7	
+ENSG00000183579	homo sapiens	E-GEOD-10879	'MCF-7 clone 5C' vs 'MCF-7'	1.9	0.00000836043329787569	
+ENSG00000183579	homo sapiens	E-GEOD-3325	'metastatic prostate cancer' vs 'benign prostate tumor'	-1.9	0.00363212350221614	
+ENSG00000183579	homo sapiens	E-GEOD-63252	'wild type; tunicamycin' vs 'wild type; control'	1.9	0.0222227093286124	
+ENSG00000183579	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'TMEM45A knockdown by siRNA'	-1.8	5.22080545348738e-20	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '54 hour'	1.8	8.78222651121655e-7	
+ENSG00000183579	homo sapiens	E-MTAB-6087	'hypoxia' vs 'normoxia' in 'SW684'	-1.8	0.0000387336977860347	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; interferon gamma; 1 day' vs 'none; 3 day' in 'none; none; 0 day'	-1.8	0.0000568482924442681	
+ENSG00000183579	homo sapiens	E-MEXP-1372	'cooked broccoli' at '1 minute' vs 'water'	-1.8	0.00062752516552077	
+ENSG00000183579	homo sapiens	E-MEXP-2351	'subependymal giant cell astrocytoma' vs 'normal'	-1.8	0.0373374624764382	
+ENSG00000183579	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'scrambled siRNA'	-1.7	7.94510105091592e-21	
+ENSG00000183579	homo sapiens	E-MTAB-5285	'gefitinib; 24 hour' vs 'none; 2 hour'	-1.7	2.90365803496876e-18	
+ENSG00000183579	homo sapiens	E-GEOD-52707	'SKR6LR cells resistant to lapanitib' vs 'SKR6 cells with elevated HER2 expression'	1.7	8.80569747196604e-7	
+ENSG00000183579	homo sapiens	E-GEOD-40595	'ovarian cancer' vs 'normal' in 'epithelial cell'	-1.7	0.00000182451340687725	
+ENSG00000183579	homo sapiens	E-GEOD-53757	'tumor' vs 'normal' in 'stage 4'	-1.7	0.0000200112482359031	
+ENSG00000183579	homo sapiens	E-MEXP-3025	'PE e/10 adherent culture' vs 'sphere culture'	-1.7	0.0000535028224333523	
+ENSG00000183579	homo sapiens	E-GEOD-50760	'colorectal cancer metastatic in the liver' vs 'normal'	1.6	2.89824441393365e-16	
+ENSG00000183579	homo sapiens	E-MTAB-7033	'p63 knockdown by siRNA' vs 'scrambled siRNA' in 'BxPC-3'	-1.6	5.15130438985638e-12	
+ENSG00000183579	homo sapiens	E-MTAB-9209	'5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamide; 0.4 millimolar' vs 'none'	-1.6	3.85387444257092e-7	
+ENSG00000183579	homo sapiens	E-GEOD-52567	'shRNA mediated knockdown of MBD4 and retrovirus mediated expression of RON and MSP' vs 'none'	1.6	0.00000119770577904752	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '48 hour'	1.6	0.0000027231282588997	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; lipopolysaccharide; 1 day' vs 'none; none; 0 day'	-1.6	0.00016604247492145	
+ENSG00000183579	homo sapiens	E-GEOD-12606	'metastatic tissue' vs 'normal tissue adjacent to neoplasm' in 'clear cell renal cell carcinoma'	-1.6	0.0106041828869565	
+ENSG00000183579	homo sapiens	E-TABM-868	'GAM overexpression' vs 'wild type' in 'lipopolysaccharide; 100 nanogram per milliliter'	-1.5	4.81038091953607e-7	
+ENSG00000183579	homo sapiens	E-GEOD-14973	'valproic acid; 1 millimolar' vs 'none; '	1.5	4.83798829362404e-7	
+ENSG00000183579	homo sapiens	E-GEOD-55859	'acquired TRAIL-resistance' vs 'control'	1.5	0.00000153703026346771	
+ENSG00000183579	homo sapiens	E-MEXP-1372	'cooked broccoli' at '0 minute' vs 'water'	-1.5	0.0152106206766491	
+ENSG00000183579	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-LM2'	-1.4	5.73211553266756e-20	
+ENSG00000183579	homo sapiens	E-GEOD-53757	'tumor' vs 'normal' in 'stage 3'	-1.4	0.00000157194533270841	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '60 hour'	1.4	0.00000231546808043079	
+ENSG00000183579	homo sapiens	E-GEOD-67338	'treated with 118 micromolar Teriflunomide' vs 'treated with 0.1 percent DMSO'	-1.4	0.00000402542752899618	
+ENSG00000183579	homo sapiens	E-GEOD-30516	'BT20; 24 hour' vs 'BT20; 0 hour'	-1.4	0.0000366048954027064	
+ENSG00000183579	homo sapiens	E-MTAB-5627	'golgicide A' vs 'DMSO' at '20 hour'	-1.4	0.000115065181919309	
+ENSG00000183579	homo sapiens	E-GEOD-21612	'xenografted parental' vs 'cultured parental' in 'serum-containing medium'	1.4	0.0347823765521724	
+ENSG00000183579	homo sapiens	E-GEOD-95132	'primary tumor' vs 'adjacent non-tumor colon' in 'colorectal cancer'	1.4	0.0415793552053893	
+ENSG00000183579	homo sapiens	E-MTAB-5285	'gefitinib; 6 hour' vs 'none; 2 hour'	-1.3	8.10407476573163e-12	
+ENSG00000183579	homo sapiens	E-GEOD-55092	'neoplasm' vs 'normal tissue adjacent to neoplasm' in 'liver'	1.3	5.27199643743213e-10	
+ENSG00000183579	homo sapiens	E-GEOD-11285	'enzastaurin' vs 'DMSO' at '10 hour'	1.3	0.00000644743065581284	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar' at '3 day' vs 'none' at '0 day' in 'none'	-1.3	0.00000732515143432509	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'A549; adenocarcinoma of lung; P10' vs 'A549; adenocarcinoma of lung; P0'	-1.3	0.00000782522853791276	
+ENSG00000183579	homo sapiens	E-GEOD-40517	'Elk1 siRNA knockdown' vs 'control'	1.3	0.000129169649939915	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'K-562; chronic myelogenous (blast crisis) leukemia; P10' vs 'K-562; chronic myelogenous (blast crisis) leukemia; P0'	1.3	0.000160686852919843	
+ENSG00000183579	homo sapiens	E-MEXP-3628	'osteosarcoma' vs 'normal'	1.3	0.00181810665123875	
+ENSG00000183579	homo sapiens	E-GEOD-63252	'p53KO; tunicamycin' vs 'p53KO; control'	1.3	0.0207133015630402	
+ENSG00000183579	homo sapiens	E-MTAB-8444	'Crispr-mediated SOX4 knockout' vs 'wild type genotype' in 'HIV-1' at '8 hour'	-1.3	0.0286328766251215	
+ENSG00000183579	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-MB-231'	-1.2	2.71676084154523e-8	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '36 hour'	1.2	7.23325798633895e-7	
+ENSG00000183579	homo sapiens	E-GEOD-56677	'Human betacoronavirus 2c England-Qatar/2012' vs 'mock' at '18 hour'	1.2	0.00000120239432673692	
+ENSG00000183579	homo sapiens	E-GEOD-7835	'deferoxamine; HIF-1a siRNA' vs 'deferoxamine; none'	1.2	0.00000130981639236254	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'HCT-116; colon carcinoma; P10' vs 'HCT-116; colon carcinoma; P0'	-1.2	0.00000174802997424443	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'COLO 205; adenocarcinoma of colon; P10' vs 'COLO 205; adenocarcinoma of colon; P0'	-1.2	0.00000466054252633985	
+ENSG00000183579	homo sapiens	E-GEOD-10879	'MCF-7 clone 2A' vs 'MCF-7'	1.2	0.0000135919949512601	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; lipopolysaccharide and interferon gamma; 1 day' vs 'none; none; 0 day'	-1.2	0.0000943266207093039	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; interleukin-4; 2 day' vs 'none; 3 day' in 'none; none; 0 day'	-1.2	0.000289413418499022	
+ENSG00000183579	homo sapiens	E-MEXP-1482	'miR15a/miR16-1' vs 'empty vector'	-1.2	0.000473801657520812	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'A549; adenocarcinoma of lung; P04' vs 'A549; adenocarcinoma of lung; P0'	-1.2	0.00052574031172408	
+ENSG00000183579	homo sapiens	E-GEOD-49284	'EPZ6438; 10x lowest cytotoxic concentration' vs 'DMSO' in 'SUDHL6' at '2 day'	1.2	0.00071342066808245	
+ENSG00000183579	homo sapiens	E-GEOD-66354	'supratentorial ependymoma' vs 'normal'	1.2	0.000794822736813861	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'AsPC-1; pancreatic adenocarcinoma; P10' vs 'AsPC-1; pancreatic adenocarcinoma; P0'	-1.2	0.00117458659169592	
+ENSG00000183579	homo sapiens	E-GEOD-41827	'casiopeina II-gly' vs 'control'	-1.2	0.00159771434798987	
+ENSG00000183579	homo sapiens	E-GEOD-44097	'siRNA beta-catenin' vs 'siRNA beta-galactosidase (control)' in 'DLD1'	-1.2	0.00261252683783505	
+ENSG00000183579	homo sapiens	E-GEOD-35493	'medulloblastoma' vs 'normal'	-1.2	0.00816366994525342	
+ENSG00000183579	homo sapiens	E-MTAB-10304	'lapatinib; 500 nanomolar; 35 day' vs 'dimethyl sulfoxide; 1 day'	-1.1	1.96923125071985e-9	
+ENSG00000183579	homo sapiens	E-GEOD-30531	'MLN4924; 650 millimolar' at '8 hour' vs 'DMSO; ' at '8 hour'	1.1	0.00000118809021374076	
+ENSG00000183579	homo sapiens	E-GEOD-49284	'EPZ6438; 10x lowest cytotoxic concentration' vs 'DMSO' in 'SUDHL6' at '6 day'	1.1	0.00000194385219553385	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '72 hour'	1.1	0.00000412761427751176	
+ENSG00000183579	homo sapiens	E-GEOD-40584	'Nkx2-1 overexpression' vs 'wild type'	-1.1	0.0000134085520480707	
+ENSG00000183579	homo sapiens	E-GEOD-48433	'HOP-92; large cell undifferentiated lung; P10' vs 'HOP-92; large cell undifferentiated lung; P0'	1.1	0.0000298201954660702	
+ENSG00000183579	homo sapiens	E-CURD-45	'neoplasm' vs 'normal tissue adjacent to neoplasm'	-1.1	0.0000633407065791756	
+ENSG00000183579	homo sapiens	E-GEOD-44097	'siRNA beta-catenin' vs 'siRNA beta-galactosidase (control)' in 'SW480'	-1.1	0.000679212247071752	
+ENSG00000183579	homo sapiens	E-MEXP-2280	'Pick disease' vs 'normal'	1.1	0.00163053691145572	
+ENSG00000183579	homo sapiens	E-GEOD-8961	'human metapneumovirus' at '48 hour' vs 'none' at '48 hour'	-1.1	0.00335622235735825	
+ENSG00000183579	homo sapiens	E-GEOD-57116	'3 h DRB 8 min 4sU' vs 'untreated'	-1.1	0.0069121777323027	
+ENSG00000183579	homo sapiens	E-GEOD-53757	'tumor' vs 'normal' in 'stage 2'	-1	1.88761652827858e-10	
+ENSG00000183579	homo sapiens	E-GEOD-54962	'50 uM Enterobactin' vs 'control'	-1	1.54241272801521e-7	
+ENSG00000183579	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	-1	2.0196848164652e-7	
+ENSG00000183579	homo sapiens	E-GEOD-38332	'Nrf2 siRNA knockdown' vs 'scrambled siRNA'	1	3.93439730551e-7	
+ENSG00000183579	homo sapiens	E-GEOD-46699	'neoplasm' vs 'normal tissue adjacent to neoplasm' in 'smoker; non-obese'	-1	0.00000479051446948823	
+ENSG00000183579	homo sapiens	E-GEOD-49284	'EPZ6438; lowest cytotoxic concentration' vs 'DMSO' in 'SUDHL6' at '6 day'	1	0.0000174186767895645	
+ENSG00000183579	homo sapiens	E-GEOD-37827	'SARS coronavirus Urbani' vs 'none' at '60 hour'	1	0.0000513407880742934	
+ENSG00000183579	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '30 hour'	1	0.000167852737702875	
+ENSG00000183579	homo sapiens	E-MTAB-5627	'brefeldin A' vs 'ethanol' at '20 hour'	-1	0.00027605296468474	
+ENSG00000183579	homo sapiens	E-MTAB-5917	'phorbol 13-acetate 12-myristate; 100 nanomolar; interleukin-4 and interleukin-13; 2 day' vs 'none; none; 0 day'	-1	0.000378784317551537	
+ENSG00000183579	homo sapiens	E-GEOD-37827	'SARS coronavirus Urbani' vs 'none' at '72 hour'	1	0.000464019349050367	
+ENSG00000183579	homo sapiens	E-GEOD-45417	'PMA' vs 'vehicle' in 'ZXDC1 knockdown'	-1	0.000665977551373674	
+ENSG00000183579	homo sapiens	E-GEOD-23930	'lethal factor (anthrax toxin)' vs 'lacZ'	-1	0.00200109774359269	
+ENSG00000183579	homo sapiens	E-GEOD-11791	'zinc; 75 millimolar; p-delta-MT-Myc' vs 'zinc; 75 millimolar; empty vector'	1	0.00225106459204186	
+ENSG00000183579	homo sapiens	E-MEXP-3496	'Enterococcus faecalis' at '5 day' vs 'none' at '5 day'	-1	0.00452126929548075	
+ENSG00000183579	homo sapiens	E-GEOD-35493	'glioblastoma' vs 'normal'	-1	0.00897913932146906	
+ENSG00000183579	homo sapiens	E-GEOD-40968	'MCF-7; ACSL4-induced' vs 'MCF-7; control induced'	-1	0.00956564574106104	
+ENSG00000183579	homo sapiens	E-GEOD-55541	'CA-PDGFRA + sh-p53 + H3.3-K27M' vs 'mock'	-1	0.019062810863024	
+ENSG00000183579	homo sapiens	E-MTAB-3330	'doxycycline-mediated repression of CTNNB1' vs 'wild type'	-1	0.0408685283745619	
+ENSG00000183579	homo sapiens	E-GEOD-9599	'EGFR inhibition resistant' vs 'EGFR inhibition sensitive'	-1	0.0456726004041715	

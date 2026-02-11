@@ -1,0 +1,8 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000203812	homo sapiens	E-MTAB-5678	'squamous cell carcinoma' vs 'normal'	-3.5	0.0124672019386655	
+ENSG00000203812	homo sapiens	E-GEOD-63452	'24 hour' vs '0 hour' in 'MCF-10A-H1047R'	2.9	0.00000524459568086644	
+ENSG00000203812	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to N terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-2.4	3.67910002939419e-12	
+ENSG00000203812	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to C terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	-2.4	5.91764523483855e-10	
+ENSG00000203812	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	2.4	0.00242795921269891	
+ENSG00000203812	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-MB-231'	-2	0.000126393622438246	
+ENSG00000203812	homo sapiens	E-GEOD-63452	'12 hour' vs '0 hour' in 'MCF-10A-H1047R'	1.8	0.0278026490965836	

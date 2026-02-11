@@ -1,0 +1,40 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000278637	homo sapiens	E-GEOD-52194	'triple-negative breast cancer; breast carcinoma' vs 'normal'	8.1	3.07762130567784e-16	
+ENSG00000278637	homo sapiens	E-GEOD-52194	'HER2 Positive Breast Carcinoma; breast carcinoma' vs 'normal'	8.1	7.54337040122283e-15	
+ENSG00000278637	homo sapiens	E-GEOD-63452	'24 hour' vs '0 hour' in 'MCF-10A-H1047R'	7.4	6.32366351911514e-56	
+ENSG00000278637	homo sapiens	E-GEOD-63452	'12 hour' vs '0 hour' in 'MCF-10A-H1047R'	7.2	3.64862622406761e-44	
+ENSG00000278637	homo sapiens	E-GEOD-52194	'non-triple-negative breast cancer; breast carcinoma' vs 'normal'	6.9	2.37849098031802e-13	
+ENSG00000278637	homo sapiens	E-MTAB-5678	'squamous cell carcinoma' vs 'normal'	-6.2	7.63450145554559e-14	
+ENSG00000278637	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'TMEM45A knockdown by siRNA'	5.7	1.14980599194171e-15	
+ENSG00000278637	homo sapiens	E-MTAB-7518	'cisplatin; 100 micromolar' vs 'none' in 'scrambled siRNA'	5.3	3.38793976793502e-14	
+ENSG00000278637	homo sapiens	E-GEOD-63452	'12 hour' vs '0 hour' in 'MCF-10A'	4.7	1.765384533028e-53	
+ENSG00000278637	homo sapiens	E-GEOD-63452	'24 hour' vs '0 hour' in 'MCF-10A'	3.5	5.78427584841454e-15	
+ENSG00000278637	homo sapiens	E-MTAB-8677	'SPI1 -/-' vs 'SPI1 +/+'	-3.4	0.0479395006360149	
+ENSG00000278637	homo sapiens	E-GEOD-65485	'neoplasm' vs 'normal tissue adjacent to neoplasm'	3	0.000249169289232841	
+ENSG00000278637	homo sapiens	E-MTAB-7033	'p63 knockdown by siRNA' vs 'scrambled siRNA' in 'BxPC-3'	2.9	1.64791930814972e-11	
+ENSG00000278637	homo sapiens	E-GEOD-60052	'small cell lung carcinoma' vs 'normal'	2.8	0.0000756877938412669	
+ENSG00000278637	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-MB-231'	-2.2	1.9967667185187e-15	
+ENSG00000278637	homo sapiens	E-GEOD-59612	'contrast-enhancing core; glioma' vs 'normal'	2.1	0.0383448633514415	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '72 hour'	1.9	0.00000151370668391965	
+ENSG00000278637	homo sapiens	E-GEOD-57116	'3 h DRB 0 min 4sU' vs 'untreated'	-1.9	0.00889708322438272	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '60 hour'	1.8	4.75611321797042e-7	
+ENSG00000278637	homo sapiens	E-MTAB-8887	'neoplasm; grade 2 and grade 3' vs 'normal tissue adjacent to neoplasm' in 'hepatocellular carcinoma'	1.7	0.0111729418633006	
+ENSG00000278637	homo sapiens	E-MTAB-3649	'Listeria monocytogenes EGD-e' vs 'none'	-1.6	2.4938165359943e-12	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '54 hour'	1.6	8.28592885432541e-7	
+ENSG00000278637	homo sapiens	E-MTAB-8887	'neoplasm; grade 2, focal grade 3' vs 'normal tissue adjacent to neoplasm' in 'hepatocellular carcinoma'	1.6	0.00860208805936294	
+ENSG00000278637	homo sapiens	E-MTAB-5244	'Snai1 knockout' vs 'wild type'	-1.5	2.86258417051869e-16	
+ENSG00000278637	homo sapiens	E-GEOD-49608	'7 hour' vs '0 hour' in 'MDA-LM2'	-1.4	2.9351599583485e-15	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '48 hour'	1.4	0.000221931739410362	
+ENSG00000278637	homo sapiens	E-MTAB-6235	'DDX54 siRNA 9' vs 'scrambled siRNA'	-1.4	0.000468189199994567	
+ENSG00000278637	homo sapiens	E-GEOD-56677	'Human betacoronavirus 2c England-Qatar/2012; 24 hour' vs 'mock; 18 hour'	1.3	0.0000587672190778383	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani' vs 'mock' at '60 hour'	1.3	0.0000610975392112553	
+ENSG00000278637	homo sapiens	E-MTAB-4363	'expression of estrogen receptor beta fused to C terminus tandem affinity purification tag' vs 'expression of estrogen receptor alpha fused to C terminus tandem affinity purification tag'	1.2	5.30844154473205e-45	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani' vs 'mock' at '48 hour'	1.2	0.000362141845881977	
+ENSG00000278637	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani' vs 'mock' at '54 hour'	1.2	0.00262451057150649	
+ENSG00000278637	homo sapiens	E-MTAB-6235	'DDX3 siRNA 6' vs 'scrambled siRNA'	-1.1	0.0000114771194092141	
+ENSG00000278637	homo sapiens	E-MTAB-6235	'DDX54 siRNA 12' vs 'scrambled siRNA'	-1.1	0.00213559378235414	
+ENSG00000278637	homo sapiens	E-GEOD-49608	'4 hour' vs '0 hour' in 'MDA-MB-231'	-1	1.95970317895357e-20	
+ENSG00000278637	homo sapiens	E-MTAB-7808	'doxycycline' vs 'none' in '786-0'	-1	1.15800799842726e-14	
+ENSG00000278637	homo sapiens	E-GEOD-68086	'non-small cell lung carcinoma' vs 'normal'	-1	0.0136327034804526	
+ENSG00000278637	homo sapiens	E-MTAB-6204	'PTBP1/2 knock down by siRNA' vs 'scrambled siRNA' in 'nuclear RNA'	1	0.0196343089612949	
+ENSG00000278637	homo sapiens	E-GEOD-68086	'colorectal carcinoma' vs 'normal'	-1	0.0248850989501788	

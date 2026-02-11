@@ -1,0 +1,56 @@
+Gene	Species	Experiment accession	Comparison	log_2 fold change	Adjusted p-value	t-statistic
+ENSG00000164736	homo sapiens	E-GEOD-52194	'triple-negative breast cancer; breast carcinoma' vs 'normal'	-7.4	2.52434948187966e-37	
+ENSG00000164736	homo sapiens	E-GEOD-52194	'HER2 Positive Breast Carcinoma; breast carcinoma' vs 'normal'	-6.5	1.80741367896391e-23	
+ENSG00000164736	homo sapiens	E-GEOD-52194	'non-triple-negative breast cancer; breast carcinoma' vs 'normal'	-6.4	1.41209680236863e-44	
+ENSG00000164736	homo sapiens	E-GEOD-40595	'ovarian cancer' vs 'normal' in 'epithelial cell'	4.3	1.13433329804805e-10	
+ENSG00000164736	homo sapiens	E-GEOD-48433	'A549; adenocarcinoma of lung; P01' vs 'A549; adenocarcinoma of lung; P0'	2.9	1.78035277648588e-7	
+ENSG00000164736	homo sapiens	E-GEOD-95132	'primary tumor' vs 'adjacent non-tumor colon' in 'colorectal cancer'	-2.8	0.0000139852618428827	
+ENSG00000164736	homo sapiens	E-GEOD-18842	'non-small cell lung cancer' vs 'normal'	-2.7	1.23725996274796e-25	
+ENSG00000164736	homo sapiens	E-GEOD-81089	'tumor tissue' vs 'non-malignant tissue'	-2.7	6.06880759146235e-23	
+ENSG00000164736	homo sapiens	E-MTAB-5762	'uterine leiomyosarcoma' vs 'normal'	-2.7	0.0000068446952408068	
+ENSG00000164736	homo sapiens	E-GEOD-76987	'colon adenocarcinoma' vs 'normal'	2.3	0.00000214130950135786	
+ENSG00000164736	homo sapiens	E-GEOD-45042	'Human betacoronavirus 2c EMC/2012' vs 'mock' at '24 hour'	-2.3	0.0000254662970830725	
+ENSG00000164736	homo sapiens	E-GEOD-21612	'xenografted parental' vs 'cultured parental' in 'serum-containing medium'	2.2	0.00858554235643806	
+ENSG00000164736	homo sapiens	E-GEOD-21668	'early mesodermal progenitors' vs 'undifferentiated cells'	2	0.00000129461700037747	
+ENSG00000164736	homo sapiens	E-GEOD-66207	'Crohn's disease; B2, stricturing' vs 'non inflammatory bowel disease control'	-2	0.00199301335596064	
+ENSG00000164736	homo sapiens	E-GEOD-18773	'side population cell' vs 'non-side population cell'	2	0.00334803425391463	
+ENSG00000164736	homo sapiens	E-GEOD-19804	'primary tumor' vs 'adjacent normal tissue'	-1.9	5.45447996467051e-19	
+ENSG00000164736	homo sapiens	E-MTAB-6957	'non small cell lung carcinoma neoplasm' vs 'normal tissue adjacent to neoplasm'	-1.9	1.26008445250282e-12	
+ENSG00000164736	homo sapiens	E-GEOD-52567	'shRNA mediated knockdown of MBD4 and retrovirus mediated expression of RON and MSP' vs 'none'	1.9	0.00000458629566921623	
+ENSG00000164736	homo sapiens	E-MTAB-779	'breast carcinoma' vs 'normal'	-1.9	0.00000546634987881834	
+ENSG00000164736	homo sapiens	E-GEOD-41827	'casiopeina II-gly' vs 'control'	-1.9	0.0000839689607445087	
+ENSG00000164736	homo sapiens	E-GEOD-45042	'Human betacoronavirus 2c EMC/2012; 18 hour' vs 'mock; 24 hour'	-1.9	0.000108318894766581	
+ENSG00000164736	homo sapiens	E-MTAB-5231	'adenocarcinoma' vs 'normal tissue adjacent to adenocarcinoma'	-1.9	0.00024981241269118	
+ENSG00000164736	homo sapiens	E-MTAB-5231	'squamous cell carcinoma' vs 'normal tissue adjacent to squamous cell carcinoma'	-1.9	0.0194679383836922	
+ENSG00000164736	homo sapiens	E-GEOD-19249	'lung cancer' vs 'normal' in 'lung; Fresh-frozen tissue'	-1.8	0.0000739948965392716	
+ENSG00000164736	homo sapiens	E-GEOD-40595	'ovarian cancer' vs 'normal' in 'stromal cell'	1.7	0.00527373168239598	
+ENSG00000164736	homo sapiens	E-MTAB-9479	'bone morphogenetic protein 2' vs 'PBS'	1.6	2.9180088094134e-19	
+ENSG00000164736	homo sapiens	E-GEOD-48433	'A549; adenocarcinoma of lung; P04' vs 'A549; adenocarcinoma of lung; P0'	1.6	0.010491450732411	
+ENSG00000164736	homo sapiens	E-GEOD-11151	'papillary renal cell carcinoma' vs 'normal' in 'adult'	-1.5	0.000508993675402758	
+ENSG00000164736	homo sapiens	E-GEOD-38332	'Nrf2 siRNA knockdown' vs 'vehicle'	1.4	2.53541105032955e-7	
+ENSG00000164736	homo sapiens	E-GEOD-38332	'Nrf2 siRNA knockdown' vs 'scrambled siRNA'	1.4	4.8889765084145e-7	
+ENSG00000164736	homo sapiens	E-GEOD-30296	'stable expression of BRCA1' vs 'empty vector'	-1.4	5.8937450328406e-7	
+ENSG00000164736	homo sapiens	E-GEOD-38408	'TIMP-2 overexpression' vs 'control'	-1.4	0.00364470200330132	
+ENSG00000164736	homo sapiens	E-MTAB-5678	'squamous cell carcinoma' vs 'normal'	1.3	0.00051164538807574	
+ENSG00000164736	homo sapiens	E-GEOD-11151	'chromophobe renal cell carcinoma' vs 'normal' in 'adult'	-1.3	0.00762732298435543	
+ENSG00000164736	homo sapiens	E-MTAB-4054	'Barrett’s esophagus; low-grade dysplasia' vs 'normal'	1.3	0.0120938531510018	
+ENSG00000164736	homo sapiens	E-GEOD-40844	'infected with A/NL/602/2009 virus' at '30 hour' vs 'mock' at '30 hour'	1.3	0.0158266848292105	
+ENSG00000164736	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '48 hour'	-1.3	0.0211025063916514	
+ENSG00000164736	homo sapiens	E-MTAB-3021	'PRPF8' vs 'control'	-1.2	2.77722010186571e-59	
+ENSG00000164736	homo sapiens	E-GEOD-46493	'doxorubicin; 0.6 microgram per milliliter' vs 'none'	1.2	0.00000184394456573557	
+ENSG00000164736	homo sapiens	E-GEOD-58252	'Snail overexpression' vs 'control'	1.2	0.0000916977673572844	
+ENSG00000164736	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani' vs 'mock' at '36 hour'	1.2	0.000729318608525989	
+ENSG00000164736	homo sapiens	E-MTAB-4054	'esophageal adenocarcinoma' vs 'normal'	1.2	0.00254992730736561	
+ENSG00000164736	homo sapiens	E-GEOD-21422	'invasive ductal carcinoma' vs 'normal'	-1.2	0.00570021913480787	
+ENSG00000164736	homo sapiens	E-MEXP-231	'lung adenocarcinoma' vs 'normal'	-1.1	2.98753946374929e-10	
+ENSG00000164736	homo sapiens	E-GEOD-56026	'control; interferon gamma; 250 micromolar' vs 'control; none; '	-1.1	0.000177266608155493	
+ENSG00000164736	homo sapiens	E-GEOD-7515	'mammosphere cell' vs 'breast tumor cell'	-1.1	0.000423902754348691	
+ENSG00000164736	homo sapiens	E-GEOD-42619	'GW0742; 10 nanomolar' vs 'control; GW0742'	-1.1	0.000896138490620512	
+ENSG00000164736	homo sapiens	E-GEOD-33455	'DU-145; converted to docetaxel resistant cells' vs 'DU-145; none'	-1.1	0.000911040326392732	
+ENSG00000164736	homo sapiens	E-GEOD-33267	'SARS coronavirus Urbani ΔORF6 mutant' vs 'mock' at '60 hour'	-1.1	0.00119046540798152	
+ENSG00000164736	homo sapiens	E-MTAB-8446	'KLF5 knockdown by siRNA' vs 'scrambled siRNA'	-1.1	0.0126685672446183	
+ENSG00000164736	homo sapiens	E-GEOD-53757	'tumor' vs 'normal' in 'stage 1'	1	0.00000544487360404027	
+ENSG00000164736	homo sapiens	E-GEOD-40844	'infected with A/CA/04/2009 virus' at '12 hour' vs 'mock' at '12 hour'	1	0.00101660241058008	
+ENSG00000164736	homo sapiens	E-GEOD-19249	'lung cancer' vs 'normal' in 'lung; Formalin-fixed paraffin-embedded tissue'	-1	0.00338784073034617	
+ENSG00000164736	homo sapiens	E-MTAB-7745	'dexamethasone; 1 micromolar' vs 'vehicle'	-1	0.00535827998898407	
+ENSG00000164736	homo sapiens	E-GEOD-37571	'A/CA/04/2009 Influenza virus' at '12 hour' vs 'mock' at '12 hour'	1	0.0206488148182966	

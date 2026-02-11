@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICDTRA - Indian Cancer Database for Translational Research</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Header section with logos and title -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo logo-left">
+                    <img src="tmc.png" alt="Tata Memorial Centre">
+                </div>
+                <div class="title-block">
+                    <h1 class="title-main">ICDTRA</h1>
+                    <h2 class="title-sub">INDIAN CANCER DATABASE FOR TRANSLATIONAL RESEARCH-ACTREC</h2>
+                    <p class="title-tagline">(Demo Website for SOP and Interview)</p>
+                </div>
+                <div class="logo logo-right">
+                    <img src="actrec.png" alt="ACTREC">
+                </div>
+            </div>
+        </header>
+
+        <!-- Top menu bar -->
+        <nav class="top-menu">
+            <button class="menu-btn active" data-section="home">Home</button>
+            <button class="menu-btn" data-section="about">About Us</button>
+            <button class="menu-btn" data-section="contact">Contact</button>
+            <button class="menu-btn" data-section="genomics">Cancer Genomics</button>
+            <button class="menu-btn" data-section="proteomics">Cancer Proteomics</button>
+            <button class="menu-btn" data-section="literature">Cancer Literature</button>
+            <button class="menu-btn" data-section="diagnostics">Diagnostics</button>
+            <button class="menu-btn" data-section="treatment">Treatment Options</button>
+            <button class="menu-btn" data-section="trials">Clinical Trials</button>
+            <button class="menu-btn" data-section="education">Education</button>
+        </nav>
+
+        <!-- Main content area -->
+        <main class="main-content" id="main-content">
+            <!-- Home section (default) -->
+            <section id="section-home" class="content-section active">
+                <div class="welcome-content">
+                    <p>Welcome to the Indian Cancer Database for Translational Research (ICDTRA) demo website.</p>
+                    <p>Use the menu above to navigate between sections.</p>
+                </div>
+            </section>
+
+            <!-- About Us section -->
+            <section id="section-about" class="content-section">
+                <div class="about-content">
+                    <p>This is a demo website meant to demonstrate some of the functionality intended for the final ICDTRA website. Currently, the Cancer Genomics section offers a limited selection of differential expression data from the genomics expression database EMBL-EBI Expression Atlas (<a href="https://www.ebi.ac.uk/gxa/home" target="_blank" rel="noopener">https://www.ebi.ac.uk/gxa/home</a>). It also offers lists of the names of proteins/genes associated with signalling pathways, as sourced from the Reactome database's Pathway Browser (<a href="https://reactome.org/PathwayBrowser/" target="_blank" rel="noopener">https://reactome.org/PathwayBrowser/</a>). The Cancer Literature section currently allows users to search through a set of research articles featuring "cancer" and "differential expression" together in the title and/or the abstract, as well as listing "India" as the affiliation address of at least one of the authors of the paper. The list of publications can be viewed, and the articles can be downloaded as PDF files, in cases where the articles are open-source. The Cancer Proteomics section will operate similarly to the Cancer Genomics section, although it is not active, at present, owing to difficulties in obtaining freely available differential expression data, organised in a database. The remaining sections are represented by placeholders, which will be replaced by full-fledged sections, in time.</p>
+                </div>
+            </section>
+
+            <!-- Contact section (placeholder) -->
+            <section id="section-contact" class="content-section">
+                <div class="placeholder-content">
+                    <p>Contact information will be displayed here. (Placeholder)</p>
+                </div>
+            </section>
+
+            <!-- Cancer Genomics section -->
+            <section id="section-genomics" class="content-section genomics-section">
+                <div class="genomics-content">
+                    <!-- Search controls row -->
+                    <div class="genomics-search-row">
+                        <div class="search-field">
+                            <label for="protein-gene-search">Protein/Gene Name (as per UniProt Nomenclature)</label>
+                            <input type="text" id="protein-gene-search" placeholder="Enter protein or gene name">
+                        </div>
+                        <div class="or-separator">
+                            <span class="or-text">OR</span>
+                            <span class="info-btn-hover-wrapper">
+                                <button type="button" class="info-btn">i</button>
+                                <span class="hover-tooltip">Either enter a single Protein/Gene Name in the search box or select an entire set of proteins associated with a signalling pathway or more than one such set by selecting one or more Signalling Pathway options from the menu immediately to the right.</span>
+                            </span>
+                        </div>
+                        <div class="search-field">
+                            <label>Signalling Pathway (from Reactome)</label>
+                            <div class="pathway-options">
+                                <label class="checkbox-option"><input type="checkbox" name="pathway" value="wnt" id="pathway-wnt"> Wnt Signalling Pathway</label>
+                                <label class="checkbox-option"><input type="checkbox" name="pathway" value="mtor" id="pathway-mtor"> MTOR Signalling Pathway</label>
+                            </div>
+                        </div>
+                        <div class="search-field subsets-field">
+                            <label>Subsets of Proteins</label>
+                            <div class="subsets-wrapper">
+                                <div class="pathway-options subsets-options">
+                                    <label class="checkbox-option"><input type="radio" name="subset" value="entire" id="subset-entire"> Entire Set of Proteins</label>
+                                    <label class="checkbox-option"><input type="radio" name="subset" value="common" id="subset-common"> Proteins in Common Only</label>
+                                    <label class="checkbox-option"><input type="radio" name="subset" value="notcommon" id="subset-notcommon"> Only Proteins Not in Common</label>
+                                </div>
+                                <button type="button" class="info-btn" title="Select a subset of the proteins of the selected signalling pathways">i</button>
+                            </div>
+                        </div>
+                        <div class="search-buttons-col">
+                            <button type="button" class="clear-btn" id="clear-btn">Clear</button>
+                            <button type="button" class="search-btn" id="search-btn">Search</button>
+                        </div>
+                    </div>
+
+                    <!-- Display panels row -->
+                    <div class="genomics-panels-row">
+                        <div class="panel-left">
+                            <div class="panel-label-row">
+                                <label class="panel-label">Differential Gene Expression with Biological Fold Change</label>
+                                <button type="button" class="lit-load-btn" id="load-lit-gene-btn">Load Differential Expression Data From Cancer Literature</button>
+                            </div>
+                            <div class="data-panel">
+                                <div class="data-panel-inner">
+                                    <!-- Tabular data will display here -->
+                                </div>
+                            </div>
+                            <button type="button" class="download-btn" id="download-btn" disabled>Download Displayed Differential Gene Expression Data</button>
+                        </div>
+                        <div class="panel-right">
+                            <div class="proteins-label-row">
+                                <label class="panel-label">Proteins</label>
+                                <span class="info-btn-hover-wrapper">
+                                    <button type="button" class="info-btn">i</button>
+                                    <span class="hover-tooltip">If a protein listed here is greyed out/has its check box disabled, there is no differential gene expression data in the EMBL-EBI Expression Atlas for this protein. Otherwise, clicking on the check box for a displayed protein loads the differential gene expression data from the Expression Atlas.</span>
+                                </span>
+                                <button type="button" class="info-btn" title="Clicking on the 'URL' button for any protein listed here leads to the corresponding differential expression data page in EMBL-EBI's Expression Atlas.">i</button>
+                            </div>
+                            <div class="proteins-panel">
+                                <div class="proteins-list" id="proteins-list">
+                                    <!-- Dynamically populated -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cancer Proteomics section -->
+            <section id="section-proteomics" class="content-section">
+                <div class="proteomics-content">
+                    <p>Cancer Proteomics will operate similarly to Cancer Genomics. The proteomics database-derived differential expression data display in this section is not active at present, owing to difficulties in obtaining freely available differential expression data that is organised in a database. (Placeholder)</p>
+                    <p>View differential protein expression data drawn from cancer literature, below:</p>
+
+                    <div class="proteomics-panels-row">
+                        <div class="panel-left">
+                            <label class="panel-label">Differential Protein Expression with Biological Fold Change</label>
+                            <div class="data-panel">
+                                <div class="data-panel-inner" id="prot-data-panel-inner">
+                                    <!-- Tabular data will display here -->
+                                </div>
+                            </div>
+                            <button type="button" class="download-btn" id="download-prot-btn" disabled>Download Displayed Protein Expression Data</button>
+                        </div>
+                        <div class="panel-right">
+                            <label class="panel-label">Proteins</label>
+                            <div class="proteins-panel">
+                                <div class="proteins-list" id="prot-literature-list">
+                                    <div class="protein-option">
+                                        <input type="checkbox" id="prot-lit-main" name="prot-lit-select" value="Differential_Protein_Expression_From_Literature">
+                                        <label for="prot-lit-main">Differential Protein Expression From Literature</label>
+                                    </div>
+                                    <div class="protein-option">
+                                        <input type="checkbox" id="prot-lit-dq" name="prot-lit-select" value="Differential_Protein_Expression_From_Literature_Direct_Quote">
+                                        <label for="prot-lit-dq">Differential Protein Expression From Literature- Directly Quoted Data</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cancer Literature section -->
+            <section id="section-literature" class="content-section">
+                <div class="literature-content">
+                    <div class="literature-layout">
+                        <div class="literature-text">
+                            <p>This section currently contains research articles sourced from PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) that were obtained through a search using the following search key, and then downloading all automatically downloadable articles from the search results: <strong>"cancer" + "differential expression" + "India"</strong>. The research articles are sorted by year of publication, and the corresponding PDFs can be downloaded.</p>
+
+                            <p>The differential protein and gene expression data derived (via the prompts shown below) from 50 articles in this section can be viewed in the Cancer Proteomics and Cancer Genomics sections.</p>
+
+                            <p class="literature-extra-text">After uploading 50 of these research article PDF files, for articles from 1996&ndash;2017, to Google&rsquo;s Notebook LM AI (<a href="https://notebooklm.google.com/" target="_blank" rel="noopener">https://notebooklm.google.com/</a>), the following prompt was posed to Notebook LM:</p>
+                            <p class="literature-extra-text literature-prompt-text">Assume that you are a cancer researcher with 20+ years of experience, especially in the fields of differential gene and protein expression. Please read the entire contents of all 50 research articles uploaded here and filter the articles to identify those that explicitly mention differential gene/protein expression in a cancer vs normal or cancer vs paratumoral or test-condition for cancer vs control-condition for cancer context. Next, on these filtered results, apply another filter to identify those research papers in which the fold change or biological fold change is reported either in result tables in the papers or somewhere in the main text. Tabulate these fold changes (which may have been reported in their source research papers directly or as a logarithm of the fold change) in one column, followed by the type of fold change reported (direct, log to the base 2, log to the base 10, etc&hellip;) in the next column, the citation of the research paper from which this value was sourced (as reported in the research paper in question) in the next column (for searching for the citation, use the full citation reported in the bibliography for the fold change value being reported in your result table, citing the full citation for the research paper for which PDF file has been named, in cases in which the fold change value is a research finding being reported as a part of the results of the research paper after which the PDF file has been named), followed by the type of cancer for which the fold change was reported, followed by the category of comparison (e.g. tumor/cancer vs normal, tumor/cancer vs paratumoral, tumor/cancer with test condition (e.g.: drug being tested) vs tumor/cancer with control/vector control, etc&hellip;). Restrict the set of fold change values reported in the result tables such that you report only those fold change values that pertain to fold changes in the expression of human (Homo sapiens) proteins or genes. Report data for fold change values found in these research papers only if they are definitely present in them. Please do not impute/hallucinate any data in the table. I would rather have no results in the table than have fabricated/false/hallucinated results in it. Thanks! If you have searched for both differential protein expression as well as differential gene expression in the first filter applied, then please split the results table into two results tables&mdash; one for each of these two categories.</p>
+                            <p class="literature-extra-text literature-prompt-text">In each result table, please add an Experiment column at the immediate right side of the one reporting fold change type. Populate it with the type of experiment used to obtain the fold change data (e.g.: mRNA sequencing, microarray, etc&hellip;) as sourced from the respective source research paper in which the fold change value in question was reported.</p>
+                            <p class="literature-extra-text literature-prompt-text">Please add columns titled Protein Name and Gene Name, to the immediate left of the column reporting the fold change value. Populate these columns, in each row below the title/header row, with the corresponding protein name and gene name, respectively, associated with the protein/gene for which the expression fold change value was reported, in the PDF file (research paper) from which the value was sourced. If either the protein name or the gene name associated with the protein/gene is not present in the respective research article, then place a dash (-) as the value in the corresponding cell in the table. Keep the column titles/headers of the two result tables the same across these result tables. Please add columns titled &ldquo;Adjusted p-value&rdquo;, &ldquo;Raw p-value&rdquo;, and &ldquo;t-Statistic&rdquo; immediately to the right of the Fold Change Type column. Populate these columns, below the header/title rows, with the corresponding adjusted p-value, raw p-value, and t-statistic for the fold change value reported in each row of the columns, respectively, sourcing these values from the corresponding research paper (PDF file) from which the respective fold change value was sourced. If the adjusted p-value, raw p-value, or t-statistic value to be filled in a cell in the result tables is not present in the corresponding research paper (PDF file), then fill the corresponding cell with a dash (-) as its cell value.</p>
+                            <p class="literature-extra-text">This generated two tables&mdash; one for differential gene expression data and another for differential protein expression data&mdash; both of which had their data sourced from the uploaded PDF files. The following addendum was then added as a follow-up prompt, to ensure that Notebook LM did not infer any of the data, but rather quoted it from the source PDF file directly in the tables:</p>
+                            <p class="literature-extra-text literature-prompt-text">If you haven&rsquo;t already done so, while forming the final result tables reported in plain tabular form right here in the chat window, please ensure that search hits were only exact matches to all key phrases searched for during filtering and that all phrases reported in the content inside the cells of the tables were directly quoted from the respective source PDF files (research articles) and not inferred or paraphrased. Please display the result tables in the chat window above, after ensuring that they conform to these stipulations.</p>
+                        </div>
+                        <div class="literature-dropdowns" id="literature-dropdowns">
+                            <!-- Dynamically populated by script.js from literature_data.js -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diagnostics section (placeholder) -->
+            <section id="section-diagnostics" class="content-section">
+                <div class="placeholder-content">
+                    <p>Diagnostics section. (Placeholder)</p>
+                </div>
+            </section>
+
+            <!-- Treatment Options section (placeholder) -->
+            <section id="section-treatment" class="content-section">
+                <div class="placeholder-content">
+                    <p>Treatment Options section. (Placeholder)</p>
+                </div>
+            </section>
+
+            <!-- Clinical Trials section (placeholder) -->
+            <section id="section-trials" class="content-section">
+                <div class="placeholder-content">
+                    <p>Clinical Trials section. (Placeholder)</p>
+                </div>
+            </section>
+
+            <!-- Education section (placeholder) -->
+            <section id="section-education" class="content-section">
+                <div class="placeholder-content">
+                    <p>Education section. (Placeholder)</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- Error / info modal (dismissable) -->
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <p id="error-modal-text"></p>
+            <button type="button" class="modal-close-btn" id="error-modal-close">Close</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="literature_data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
