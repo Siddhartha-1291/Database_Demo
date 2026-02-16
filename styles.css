@@ -912,19 +912,23 @@ body {
 
 /* Biomarker table styles */
 .biomarker-display-panel table.biomarker-table {
-    width: 100%;
+    min-width: 1800px;
     border-collapse: collapse;
-    font-size: clamp(11px, 1.4vw, 15px);
+    font-size: 15px;
 }
 
 .biomarker-display-panel table.biomarker-table th,
 .biomarker-display-panel table.biomarker-table td {
     border: 1px solid #ccc;
-    padding: 5px 8px;
+    padding: 6px 12px;
     text-align: left;
     white-space: normal;
-    word-break: break-word;
-    max-width: 300px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    min-width: 100px;
+    max-width: 320px;
+    vertical-align: top;
+    line-height: 1.45;
 }
 
 .biomarker-display-panel table.biomarker-table th {
@@ -933,6 +937,7 @@ body {
     top: 0;
     z-index: 2;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .biomarker-display-panel table.biomarker-table tr:nth-child(even) {

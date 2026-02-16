@@ -153,8 +153,14 @@ def build_database():
                     break
 
             if pgo_idx >= 0:
-                gene_rows = [header] + [r for r in bm_rows[1:] if "Gene" in (r[pgo_idx] if pgo_idx < len(r) else "")]
-                prot_rows = [header] + [r for r in bm_rows[1:] if "Protein" in (r[pgo_idx] if pgo_idx < len(r) else "")]
+                _gene_pat = re.compile(r'(?<![a-zA-Z])Gene(?![a-zA-Z])')
+                _prot_pat = re.compile(r'(?<![a-zA-Z])Protein(?![a-zA-Z])')
+
+                def _field(row):
+                    return row[pgo_idx] if pgo_idx < len(row) else ""
+
+                gene_rows = [header] + [r for r in bm_rows[1:] if _gene_pat.search(_field(r))]
+                prot_rows = [header] + [r for r in bm_rows[1:] if _prot_pat.search(_field(r))]
                 create_table_from_csv(conn, "Gene_Biomarkers_in_Cancer_Prospective_Studies_Data_Table", gene_rows)
                 create_table_from_csv(conn, "Protein_Biomarkers_in_Cancer_Prospective_Studies_Data_Table", prot_rows)
 
