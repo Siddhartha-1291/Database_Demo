@@ -30,10 +30,22 @@
             <button class="menu-btn active" data-section="home">Home</button>
             <button class="menu-btn" data-section="about">About Us</button>
             <button class="menu-btn" data-section="contact">Contact</button>
-            <button class="menu-btn" data-section="genomics">Cancer Genomics</button>
-            <button class="menu-btn" data-section="proteomics">Cancer Proteomics</button>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="genomics">Cancer Genomics</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="genomics" data-subsection="diff-expr">Differential Gene Expression</div>
+                    <div class="menu-hover-option" data-section="genomics" data-subsection="biomarker">Gene Biomarker Data From Literature</div>
+                </div>
+            </div>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="proteomics">Cancer Proteomics</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="proteomics" data-subsection="diff-expr">Differential Protein Expression</div>
+                    <div class="menu-hover-option" data-section="proteomics" data-subsection="biomarker">Protein Biomarker Data From Literature</div>
+                </div>
+            </div>
             <button class="menu-btn" data-section="literature">Cancer Literature</button>
-            <button class="menu-btn" data-section="diagnostics">Diagnostics</button>
+            <button class="menu-btn" data-section="diagnostics" data-subsection="diagnostics">Diagnostics</button>
             <button class="menu-btn" data-section="treatment">Treatment Options</button>
             <button class="menu-btn" data-section="trials">Clinical Trials</button>
             <button class="menu-btn" data-section="education">Education</button>
@@ -65,7 +77,8 @@
 
             <!-- Cancer Genomics section -->
             <section id="section-genomics" class="content-section genomics-section">
-                <div class="genomics-content">
+                <!-- Differential Expression sub-section (default) -->
+                <div class="genomics-content subsection-panel" id="genomics-diff-expr">
                     <!-- Search controls row -->
                     <div class="genomics-search-row">
                         <div class="search-field">
@@ -134,11 +147,23 @@
                         </div>
                     </div>
                 </div>
+                <!-- Biomarker sub-section for Cancer Genomics -->
+                <div class="biomarker-subsection subsection-panel" id="genomics-biomarker" style="display:none;">
+                    <div class="diagnostics-content">
+                        <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
+                        <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
+                        <div class="biomarker-display-panel" id="genomics-biomarker-panel">
+                            <div class="biomarker-panel-inner"></div>
+                        </div>
+                        <button type="button" class="download-btn biomarker-download-btn" id="download-gene-biomarker-btn" disabled>Download Displayed Gene Biomarker Data From Literature</button>
+                    </div>
+                </div>
             </section>
 
             <!-- Cancer Proteomics section -->
             <section id="section-proteomics" class="content-section">
-                <div class="proteomics-content">
+                <!-- Differential Expression sub-section (default) -->
+                <div class="proteomics-content subsection-panel" id="proteomics-diff-expr">
                     <p>Cancer Proteomics will operate similarly to Cancer Genomics. The proteomics database-derived differential expression data display in this section is not active at present, owing to difficulties in obtaining freely available differential expression data that is organised in a database. (Placeholder)</p>
                     <p>View differential protein expression data drawn from cancer literature, below:</p>
 
@@ -169,6 +194,17 @@
                         </div>
                     </div>
                 </div>
+                <!-- Biomarker sub-section for Cancer Proteomics -->
+                <div class="biomarker-subsection subsection-panel" id="proteomics-biomarker" style="display:none;">
+                    <div class="diagnostics-content">
+                        <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
+                        <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
+                        <div class="biomarker-display-panel" id="proteomics-biomarker-panel">
+                            <div class="biomarker-panel-inner"></div>
+                        </div>
+                        <button type="button" class="download-btn biomarker-download-btn" id="download-prot-biomarker-btn" disabled>Download Displayed Protein Biomarker Data From Literature</button>
+                    </div>
+                </div>
             </section>
 
             <!-- Cancer Literature section -->
@@ -194,17 +230,25 @@
                 </div>
             </section>
 
-            <!-- Diagnostics section (placeholder) -->
+            <!-- Diagnostics section -->
             <section id="section-diagnostics" class="content-section">
-                <div class="placeholder-content">
-                    <p>Diagnostics section. (Placeholder)</p>
+                <div class="diagnostics-content">
+                    <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
+                    <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
+                    <div class="biomarker-display-panel" id="diagnostics-biomarker-panel">
+                        <div class="biomarker-panel-inner"></div>
+                    </div>
+                    <button type="button" class="download-btn biomarker-download-btn" id="download-diagnostics-biomarker-btn" disabled>Download Displayed Biomarker Data From Literature</button>
                 </div>
             </section>
 
-            <!-- Treatment Options section (placeholder) -->
+            <!-- Treatment Options section -->
             <section id="section-treatment" class="content-section">
-                <div class="placeholder-content">
-                    <p>Treatment Options section. (Placeholder)</p>
+                <div class="treatment-content">
+                    <p>Listed below are the hospitals and institutions that are members of the National Cancer Grid (NCG), organised by Tata Memorial Centre (TMC). These member hospitals/research institutes provide cancer care as well as collaborate for translational research in cancer.</p>
+                    <div class="ncg-display-panel" id="ncg-display-panel">
+                        <div class="ncg-panel-inner"></div>
+                    </div>
                 </div>
             </section>
 

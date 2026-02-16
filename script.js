@@ -13,30 +13,85 @@ document.addEventListener('DOMContentLoaded', function () {
     const contentSections = document.querySelectorAll('.content-section');
     const mainContent = document.getElementById('main-content');
 
+    /**
+     * Switch to a section and optionally a sub-section within it.
+     * @param {string} sectionId  - e.g. "genomics", "proteomics", "diagnostics"
+     * @param {string} [subsection] - e.g. "diff-expr", "biomarker"
+     */
+    function activateSection(sectionId, subsection) {
+        menuButtons.forEach(function (btn) { btn.classList.remove('active'); });
+        // Mark the correct top-level menu button as active
+        var matchBtn = document.querySelector('.menu-btn[data-section="' + sectionId + '"]');
+        if (matchBtn) matchBtn.classList.add('active');
+
+        contentSections.forEach(function (section) {
+            var sectionName = section.id.replace('section-', '');
+            if (sectionName === sectionId) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+
+        if (mainContent) {
+            mainContent.classList.remove('genomics-active', 'proteomics-active', 'diagnostics-active', 'treatment-active');
+            if (sectionId === 'genomics') {
+                mainContent.classList.add('genomics-active');
+            } else if (sectionId === 'proteomics') {
+                mainContent.classList.add('proteomics-active');
+            } else if (sectionId === 'diagnostics') {
+                mainContent.classList.add('diagnostics-active');
+            } else if (sectionId === 'treatment') {
+                mainContent.classList.add('treatment-active');
+            }
+        }
+
+        // Handle sub-sections within genomics / proteomics
+        if (sectionId === 'genomics' || sectionId === 'proteomics') {
+            var diffExprPanel = document.getElementById(sectionId + '-diff-expr');
+            var biomarkerPanel = document.getElementById(sectionId + '-biomarker');
+            if (subsection === 'biomarker') {
+                if (diffExprPanel) diffExprPanel.style.display = 'none';
+                if (biomarkerPanel) {
+                    biomarkerPanel.style.display = '';
+                    initBiomarkerPanel(sectionId);
+                }
+            } else {
+                if (diffExprPanel) diffExprPanel.style.display = '';
+                if (biomarkerPanel) biomarkerPanel.style.display = 'none';
+            }
+        }
+
+        // Auto-load diagnostics biomarker data
+        if (sectionId === 'diagnostics') {
+            initBiomarkerPanel('diagnostics');
+        }
+
+        // Auto-load NCG data for Treatment Options
+        if (sectionId === 'treatment') {
+            initNCGPanel();
+        }
+
+        if (sectionId === 'home') {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+
     menuButtons.forEach(function (button) {
         button.addEventListener('click', function () {
             var sectionId = this.getAttribute('data-section');
-            menuButtons.forEach(function (btn) { btn.classList.remove('active'); });
-            this.classList.add('active');
-            contentSections.forEach(function (section) {
-                var sectionName = section.id.replace('section-', '');
-                if (sectionName === sectionId) {
-                    section.classList.add('active');
-                } else {
-                    section.classList.remove('active');
-                }
-            });
-            if (mainContent) {
-                mainContent.classList.remove('genomics-active', 'proteomics-active');
-                if (sectionId === 'genomics') {
-                    mainContent.classList.add('genomics-active');
-                } else if (sectionId === 'proteomics') {
-                    mainContent.classList.add('proteomics-active');
-                }
-            }
-            if (sectionId === 'home') {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+            activateSection(sectionId);
+        });
+    });
+
+    // Hover dropdown menu options
+    var hoverOptions = document.querySelectorAll('.menu-hover-option');
+    hoverOptions.forEach(function (opt) {
+        opt.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var sectionId = this.getAttribute('data-section');
+            var subsection = this.getAttribute('data-subsection');
+            activateSection(sectionId, subsection);
         });
     });
 
@@ -625,11 +680,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
                 csvRows.push(headerArr.join(','));
             }
-            // Data rows
+            // Data rows (skip rows hidden by year filter)
             var tbody = table.querySelector('tbody');
             if (tbody) {
                 var dataRows = tbody.querySelectorAll('tr');
                 dataRows.forEach(function (tr) {
+                    if (tr.style.display === 'none') return;
                     var cells = tr.querySelectorAll('td');
                     var rowArr = [];
                     cells.forEach(function (td) {
@@ -797,6 +853,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /**
      * Generic helper: load a literature_expr table into a given panel element.
      * Adds the CSS class 'literature-table' for responsive font sizing.
+     * The Year_of_Publication column header gets a dropdown filter.
      */
     function loadLiteratureData(tableName, panelEl) {
         if (!DB.literature_expr || !DB.literature_expr[tableName]) return;
@@ -804,15 +861,55 @@ document.addEventListener('DOMContentLoaded', function () {
         var columns = entry.columns;
         var rows = entry.rows;
 
+        // Find the Year_of_Publication column index
+        var yearColIdx = -1;
+        for (var ci = 0; ci < columns.length; ci++) {
+            if (columns[ci] === 'Year_of_Publication') { yearColIdx = ci; break; }
+        }
+
         var table = panelEl.querySelector('table');
         if (!table) {
             table = document.createElement('table');
             table.className = 'literature-table';
             var thead = document.createElement('thead');
             var tr = document.createElement('tr');
-            columns.forEach(function (col) {
+            columns.forEach(function (col, idx) {
                 var th = document.createElement('th');
-                th.textContent = col;
+                if (idx === yearColIdx) {
+                    // Build the dropdown-enabled header
+                    th.className = 'year-filter-th';
+                    th.setAttribute('data-year-col-idx', yearColIdx);
+
+                    var labelSpan = document.createElement('span');
+                    labelSpan.textContent = col;
+                    th.appendChild(labelSpan);
+
+                    var arrow = document.createElement('span');
+                    arrow.className = 'year-arrow';
+                    arrow.textContent = '\u25BE'; // ▾ downward arrowhead
+                    th.appendChild(arrow);
+
+                    // Dropdown container (hidden by default)
+                    var dropdown = document.createElement('div');
+                    dropdown.className = 'year-filter-dropdown';
+                    th.appendChild(dropdown);
+
+                    // Click handler to toggle dropdown
+                    th.addEventListener('click', function (e) {
+                        e.stopPropagation();
+                        var dd = this.querySelector('.year-filter-dropdown');
+                        var isOpen = dd.classList.contains('show');
+                        // Close any other open dropdowns first
+                        closeAllYearDropdowns();
+                        if (!isOpen) {
+                            rebuildYearDropdown(dd, panelEl, yearColIdx);
+                            dd.classList.add('show');
+                            this.classList.add('open');
+                        }
+                    });
+                } else {
+                    th.textContent = col;
+                }
                 tr.appendChild(th);
             });
             thead.appendChild(tr);
@@ -820,11 +917,21 @@ document.addEventListener('DOMContentLoaded', function () {
             var tbody = document.createElement('tbody');
             table.appendChild(tbody);
             panelEl.appendChild(table);
+        } else if (yearColIdx >= 0) {
+            // Table already exists; refresh the year-filter dropdown data attribute
+            var existingTh = table.querySelector('th.year-filter-th');
+            if (existingTh) {
+                existingTh.setAttribute('data-year-col-idx', yearColIdx);
+            }
         }
+
         var tbody2 = table.querySelector('tbody');
         rows.forEach(function (row) {
             var tr2 = document.createElement('tr');
             tr2.setAttribute('data-lit-table', tableName);
+            if (yearColIdx >= 0) {
+                tr2.setAttribute('data-year', row[yearColIdx] || '');
+            }
             row.forEach(function (cell) {
                 var td = document.createElement('td');
                 td.textContent = cell;
@@ -833,6 +940,92 @@ document.addEventListener('DOMContentLoaded', function () {
             tbody2.appendChild(tr2);
         });
     }
+
+    /**
+     * Rebuild the dropdown options based on current visible rows in the table.
+     */
+    function rebuildYearDropdown(dropdown, panelEl, yearColIdx) {
+        dropdown.innerHTML = '';
+        var table = panelEl.querySelector('table');
+        if (!table) return;
+        var tbody = table.querySelector('tbody');
+        if (!tbody) return;
+
+        // Collect unique year values from ALL rows (including hidden ones)
+        var yearSet = {};
+        var allRows = tbody.querySelectorAll('tr');
+        allRows.forEach(function (tr) {
+            var y = tr.getAttribute('data-year');
+            if (y) yearSet[y] = true;
+        });
+        var years = Object.keys(yearSet).sort(function (a, b) {
+            return parseInt(b, 10) - parseInt(a, 10); // descending
+        });
+
+        // Get current filter (if any)
+        var currentFilter = table.getAttribute('data-year-filter') || 'All';
+
+        // "All" option at top
+        var allOpt = document.createElement('div');
+        allOpt.className = 'year-option' + (currentFilter === 'All' ? ' selected' : '');
+        allOpt.textContent = 'All';
+        allOpt.addEventListener('click', function (e) {
+            e.stopPropagation();
+            applyYearFilter(panelEl, 'All');
+            closeAllYearDropdowns();
+        });
+        dropdown.appendChild(allOpt);
+
+        // Individual year options
+        years.forEach(function (yr) {
+            var opt = document.createElement('div');
+            opt.className = 'year-option' + (currentFilter === yr ? ' selected' : '');
+            opt.textContent = yr;
+            opt.addEventListener('click', function (e) {
+                e.stopPropagation();
+                applyYearFilter(panelEl, yr);
+                closeAllYearDropdowns();
+            });
+            dropdown.appendChild(opt);
+        });
+    }
+
+    /**
+     * Apply a year filter: show only rows with matching year, or all rows.
+     */
+    function applyYearFilter(panelEl, yearValue) {
+        var table = panelEl.querySelector('table');
+        if (!table) return;
+        table.setAttribute('data-year-filter', yearValue);
+        var tbody = table.querySelector('tbody');
+        if (!tbody) return;
+
+        var allRows = tbody.querySelectorAll('tr');
+        allRows.forEach(function (tr) {
+            if (yearValue === 'All') {
+                tr.style.display = '';
+            } else {
+                tr.style.display = (tr.getAttribute('data-year') === yearValue) ? '' : 'none';
+            }
+        });
+    }
+
+    /**
+     * Close all open year-filter dropdowns across the page.
+     */
+    function closeAllYearDropdowns() {
+        document.querySelectorAll('.year-filter-dropdown.show').forEach(function (dd) {
+            dd.classList.remove('show');
+        });
+        document.querySelectorAll('.year-filter-th.open').forEach(function (th) {
+            th.classList.remove('open');
+        });
+    }
+
+    // Close dropdowns when clicking anywhere else on the page
+    document.addEventListener('click', function () {
+        closeAllYearDropdowns();
+    });
 
     /**
      * Generic helper: remove rows for a literature table from a panel.
@@ -851,6 +1044,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (!anySelected) {
             panelEl.innerHTML = '';
+        }
+        // Re-apply current year filter after removing rows
+        if (anySelected && table.getAttribute('data-year-filter')) {
+            var panelRef = panelEl;
+            var currentFilter = table.getAttribute('data-year-filter');
+            applyYearFilter(panelRef, currentFilter);
         }
     }
 
@@ -907,6 +1106,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (tbody) {
                 var dataRows = tbody.querySelectorAll('tr');
                 dataRows.forEach(function (tr) {
+                    if (tr.style.display === 'none') return;
                     var cells = tr.querySelectorAll('td');
                     var rowArr = [];
                     cells.forEach(function (td) {
@@ -927,6 +1127,353 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
         });
+    }
+
+    /* ======================================================================
+     *  BIOMARKER DATA – loading, multi-column filters, download
+     * ====================================================================== */
+
+    var FILTER_COLUMNS = [
+        'Protein_Gene_or_Other',
+        'Predictive_Prognostic_or_Diagnostic',
+        'Type_of_Cancer_or_Disease',
+        'Year_of_Publication',
+        'Country_of_Participants'
+    ];
+
+    var biomarkerPanelState = {};
+
+    function getBiomarkerTableName(context) {
+        if (context === 'diagnostics') return 'Biomarkers_in_Cancer_Prospective_Studies_Data_Table';
+        if (context === 'genomics') return 'Gene_Biomarkers_in_Cancer_Prospective_Studies_Data_Table';
+        if (context === 'proteomics') return 'Protein_Biomarkers_in_Cancer_Prospective_Studies_Data_Table';
+        return null;
+    }
+
+    function getBiomarkerPanelEl(context) {
+        if (context === 'diagnostics') return document.getElementById('diagnostics-biomarker-panel');
+        if (context === 'genomics') return document.getElementById('genomics-biomarker-panel');
+        if (context === 'proteomics') return document.getElementById('proteomics-biomarker-panel');
+        return null;
+    }
+
+    function getBiomarkerDownloadBtn(context) {
+        if (context === 'diagnostics') return document.getElementById('download-diagnostics-biomarker-btn');
+        if (context === 'genomics') return document.getElementById('download-gene-biomarker-btn');
+        if (context === 'proteomics') return document.getElementById('download-prot-biomarker-btn');
+        return null;
+    }
+
+    function getBiomarkerDownloadFilename(context) {
+        if (context === 'diagnostics') return 'Biomarker_Data_From_Literature.csv';
+        if (context === 'genomics') return 'Gene_Biomarker_Data_From_Literature.csv';
+        if (context === 'proteomics') return 'Protein_Biomarker_Data_From_Literature.csv';
+        return 'Biomarker_Data_From_Literature.csv';
+    }
+
+    function initBiomarkerPanel(context) {
+        if (biomarkerPanelState[context]) return;
+        var tableName = getBiomarkerTableName(context);
+        if (!tableName) return;
+        if (!DB.biomarker_tables || !DB.biomarker_tables[tableName]) return;
+
+        var entry = DB.biomarker_tables[tableName];
+        var columns = entry.columns;
+        var rows = entry.rows;
+        var panelEl = getBiomarkerPanelEl(context);
+        if (!panelEl) return;
+        var inner = panelEl.querySelector('.biomarker-panel-inner');
+        if (!inner) return;
+
+        // Build column-index map for filterable columns
+        var filterColMap = {};
+        FILTER_COLUMNS.forEach(function (colName) {
+            for (var i = 0; i < columns.length; i++) {
+                if (columns[i] === colName) {
+                    filterColMap[colName] = i;
+                    break;
+                }
+            }
+        });
+
+        // Track active filters for this context
+        var activeFilters = {};
+        FILTER_COLUMNS.forEach(function (c) { activeFilters[c] = 'All'; });
+
+        // Build table
+        var table = document.createElement('table');
+        table.className = 'biomarker-table';
+        var thead = document.createElement('thead');
+        var headerRow = document.createElement('tr');
+
+        columns.forEach(function (col, idx) {
+            var th = document.createElement('th');
+            var isFilterCol = (filterColMap[col] !== undefined);
+            if (isFilterCol) {
+                th.className = 'col-filter-th';
+                th.setAttribute('data-col-name', col);
+                th.setAttribute('data-col-idx', idx);
+
+                var labelSpan = document.createElement('span');
+                labelSpan.textContent = col;
+                th.appendChild(labelSpan);
+
+                var arrow = document.createElement('span');
+                arrow.className = 'filter-arrow';
+                arrow.textContent = '\u25BE';
+                th.appendChild(arrow);
+
+                var dropdown = document.createElement('div');
+                dropdown.className = 'col-filter-dropdown';
+                th.appendChild(dropdown);
+
+                th.addEventListener('click', (function (colName, ddEl, thEl) {
+                    return function (e) {
+                        e.stopPropagation();
+                        var isOpen = ddEl.classList.contains('show');
+                        closeAllColFilterDropdowns();
+                        if (!isOpen) {
+                            rebuildColFilterDropdown(ddEl, context, colName, columns, rows, activeFilters, filterColMap, table);
+                            ddEl.classList.add('show');
+                            thEl.classList.add('open');
+                        }
+                    };
+                })(col, dropdown, th));
+            } else {
+                th.textContent = col;
+            }
+            headerRow.appendChild(th);
+        });
+
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        var tbody = document.createElement('tbody');
+        rows.forEach(function (row) {
+            var tr = document.createElement('tr');
+            FILTER_COLUMNS.forEach(function (colName) {
+                if (filterColMap[colName] !== undefined) {
+                    tr.setAttribute('data-' + colName, row[filterColMap[colName]] || '');
+                }
+            });
+            row.forEach(function (cell) {
+                var td = document.createElement('td');
+                td.textContent = cell;
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+        inner.appendChild(table);
+
+        // Enable download button
+        var dlBtn = getBiomarkerDownloadBtn(context);
+        if (dlBtn) {
+            dlBtn.disabled = false;
+            dlBtn.addEventListener('click', function () {
+                downloadBiomarkerCSV(context);
+            });
+        }
+
+        biomarkerPanelState[context] = { activeFilters: activeFilters, filterColMap: filterColMap };
+    }
+
+    function rebuildColFilterDropdown(dropdown, context, colName, columns, rows, activeFilters, filterColMap, table) {
+        dropdown.innerHTML = '';
+        var tbody = table.querySelector('tbody');
+        if (!tbody) return;
+
+        var colIdx = filterColMap[colName];
+        if (colIdx === undefined) return;
+
+        // Collect unique values from all rows (not just visible)
+        var valueSet = {};
+        var allRows = tbody.querySelectorAll('tr');
+        allRows.forEach(function (tr) {
+            var val = tr.getAttribute('data-' + colName);
+            if (val) valueSet[val] = true;
+        });
+        var values = Object.keys(valueSet);
+
+        // Sort: descending numeric for Year_of_Publication, descending alpha for others
+        if (colName === 'Year_of_Publication') {
+            values.sort(function (a, b) { return parseInt(b, 10) - parseInt(a, 10); });
+        } else {
+            values.sort(function (a, b) {
+                var al = a.toLowerCase(), bl = b.toLowerCase();
+                if (al < bl) return 1;
+                if (al > bl) return -1;
+                return 0;
+            });
+        }
+
+        var currentFilter = activeFilters[colName] || 'All';
+
+        // "All" option
+        var allOpt = document.createElement('div');
+        allOpt.className = 'filter-option' + (currentFilter === 'All' ? ' selected' : '');
+        allOpt.textContent = 'All';
+        allOpt.addEventListener('click', function (e) {
+            e.stopPropagation();
+            activeFilters[colName] = 'All';
+            applyBiomarkerFilters(context);
+            closeAllColFilterDropdowns();
+        });
+        dropdown.appendChild(allOpt);
+
+        values.forEach(function (val) {
+            var opt = document.createElement('div');
+            opt.className = 'filter-option' + (currentFilter === val ? ' selected' : '');
+            opt.textContent = val;
+            opt.addEventListener('click', function (e) {
+                e.stopPropagation();
+                activeFilters[colName] = val;
+                applyBiomarkerFilters(context);
+                closeAllColFilterDropdowns();
+            });
+            dropdown.appendChild(opt);
+        });
+    }
+
+    function applyBiomarkerFilters(context) {
+        var state = biomarkerPanelState[context];
+        if (!state) return;
+        var panelEl = getBiomarkerPanelEl(context);
+        if (!panelEl) return;
+        var table = panelEl.querySelector('table');
+        if (!table) return;
+        var tbody = table.querySelector('tbody');
+        if (!tbody) return;
+
+        var activeFilters = state.activeFilters;
+        var allRows = tbody.querySelectorAll('tr');
+        allRows.forEach(function (tr) {
+            var show = true;
+            FILTER_COLUMNS.forEach(function (colName) {
+                var filterVal = activeFilters[colName];
+                if (filterVal && filterVal !== 'All') {
+                    var rowVal = tr.getAttribute('data-' + colName);
+                    if (rowVal !== filterVal) {
+                        show = false;
+                    }
+                }
+            });
+            tr.style.display = show ? '' : 'none';
+        });
+    }
+
+    function closeAllColFilterDropdowns() {
+        document.querySelectorAll('.col-filter-dropdown.show').forEach(function (dd) {
+            dd.classList.remove('show');
+        });
+        document.querySelectorAll('.col-filter-th.open').forEach(function (th) {
+            th.classList.remove('open');
+        });
+    }
+
+    // Close column-filter dropdowns on outside click
+    document.addEventListener('click', function () {
+        closeAllColFilterDropdowns();
+    });
+
+    /* ======================================================================
+     *  TREATMENT OPTIONS – NCG TABLE
+     * ====================================================================== */
+    var ncgInitialised = false;
+
+    function initNCGPanel() {
+        if (ncgInitialised) return;
+        if (!DB.ncg_tmc) return;
+        var entry = DB.ncg_tmc;
+        var columns = entry.columns;
+        var rows = entry.rows;
+
+        var panelEl = document.getElementById('ncg-display-panel');
+        if (!panelEl) return;
+        var inner = panelEl.querySelector('.ncg-panel-inner');
+        if (!inner) return;
+
+        var table = document.createElement('table');
+        table.className = 'ncg-table';
+
+        // Column widths via colgroup
+        var colgroup = document.createElement('colgroup');
+        var colClasses = ['col-state', 'col-institution', 'col-address'];
+        columns.forEach(function (_col, idx) {
+            var colEl = document.createElement('col');
+            if (idx < colClasses.length) colEl.className = colClasses[idx];
+            colgroup.appendChild(colEl);
+        });
+        table.appendChild(colgroup);
+
+        // Header
+        var thead = document.createElement('thead');
+        var headerRow = document.createElement('tr');
+        columns.forEach(function (col) {
+            var th = document.createElement('th');
+            th.textContent = col.replace(/_/g, ' ');
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        // Body
+        var tbody = document.createElement('tbody');
+        rows.forEach(function (row) {
+            var tr = document.createElement('tr');
+            row.forEach(function (cell) {
+                var td = document.createElement('td');
+                td.textContent = cell;
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+        inner.appendChild(table);
+
+        ncgInitialised = true;
+    }
+
+    function downloadBiomarkerCSV(context) {
+        var panelEl = getBiomarkerPanelEl(context);
+        if (!panelEl) return;
+        var table = panelEl.querySelector('table');
+        if (!table) return;
+
+        var csvRows = [];
+        var thead = table.querySelector('thead');
+        if (thead) {
+            var headerCells = thead.querySelectorAll('th');
+            var headerArr = [];
+            headerCells.forEach(function (th) {
+                headerArr.push('"' + th.textContent.replace(/"/g, '""') + '"');
+            });
+            csvRows.push(headerArr.join(','));
+        }
+        var tbody = table.querySelector('tbody');
+        if (tbody) {
+            var dataRows = tbody.querySelectorAll('tr');
+            dataRows.forEach(function (tr) {
+                if (tr.style.display === 'none') return;
+                var cells = tr.querySelectorAll('td');
+                var rowArr = [];
+                cells.forEach(function (td) {
+                    rowArr.push('"' + td.textContent.replace(/"/g, '""') + '"');
+                });
+                csvRows.push(rowArr.join(','));
+            });
+        }
+
+        var csvContent = csvRows.join('\n');
+        var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = getBiomarkerDownloadFilename(context);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     }
 
 });

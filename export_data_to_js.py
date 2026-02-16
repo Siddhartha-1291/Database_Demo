@@ -70,6 +70,35 @@ def export():
             pass
     data["literature_expr"] = lit_data
 
+    # --- 5. Biomarker prospective-studies tables ---
+    biomarker_table_names = [
+        "Biomarkers_in_Cancer_Prospective_Studies_Data_Table",
+        "Gene_Biomarkers_in_Cancer_Prospective_Studies_Data_Table",
+        "Protein_Biomarkers_in_Cancer_Prospective_Studies_Data_Table",
+    ]
+    bm_data = {}
+    for tbl in biomarker_table_names:
+        try:
+            pragma = conn.execute(f'PRAGMA table_info("{tbl}")').fetchall()
+            if not pragma:
+                continue
+            cols = [r[1] for r in pragma]
+            rows = conn.execute(f'SELECT * FROM "{tbl}"').fetchall()
+            bm_data[tbl] = {"columns": cols, "rows": [list(r) for r in rows]}
+        except Exception:
+            pass
+    data["biomarker_tables"] = bm_data
+
+    # --- 6. NCG_TMC table ---
+    try:
+        pragma = conn.execute('PRAGMA table_info("NCG_TMC")').fetchall()
+        if pragma:
+            cols = [r[1] for r in pragma]
+            rows = conn.execute('SELECT * FROM "NCG_TMC"').fetchall()
+            data["ncg_tmc"] = {"columns": cols, "rows": [list(r) for r in rows]}
+    except Exception:
+        pass
+
     conn.close()
 
     # Write as a JS file that defines a global variable

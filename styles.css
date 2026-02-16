@@ -789,6 +789,287 @@ body {
     margin-bottom: 12px;
 }
 
+/* Year_of_Publication dropdown filter in literature tables */
+.year-filter-th {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap !important;
+}
+
+.year-filter-th .year-arrow {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-left: 4px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.year-filter-th.open .year-arrow {
+    transform: rotate(180deg);
+}
+
+.year-filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    min-width: 90px;
+    max-height: 220px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    margin-top: 2px;
+    padding: 2px 0;
+}
+
+.year-filter-dropdown.show {
+    display: block;
+}
+
+.year-filter-dropdown .year-option {
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: normal;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #222;
+}
+
+.year-filter-dropdown .year-option:hover {
+    background: #e0ecff;
+}
+
+.year-filter-dropdown .year-option.selected {
+    background: #cde0ff;
+    font-weight: bold;
+}
+
+/* ====== Hover dropdown menus for Cancer Genomics & Cancer Proteomics ====== */
+.menu-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-hover-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 150;
+    min-width: 260px;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.18);
+    padding: 4px 0;
+}
+
+.menu-dropdown-wrapper:hover .menu-hover-dropdown {
+    display: block;
+}
+
+.menu-hover-option {
+    padding: 8px 16px;
+    font-family: Calibri, "Calibri Body", "Segoe UI", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #222;
+}
+
+.menu-hover-option:hover {
+    background: #e0ecff;
+}
+
+/* ====== Biomarker display panel ====== */
+.diagnostics-content {
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+}
+
+.biomarker-panel-label {
+    text-align: left;
+}
+
+.biomarker-display-panel {
+    border: 1px solid #333;
+    width: 100%;
+    height: 500px;
+    overflow: auto;
+    background: #fafafa;
+    position: relative;
+}
+
+.biomarker-panel-inner {
+    padding: 10px;
+    min-height: 100%;
+}
+
+/* Biomarker table styles */
+.biomarker-display-panel table.biomarker-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: clamp(11px, 1.4vw, 15px);
+}
+
+.biomarker-display-panel table.biomarker-table th,
+.biomarker-display-panel table.biomarker-table td {
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    text-align: left;
+    white-space: normal;
+    word-break: break-word;
+    max-width: 300px;
+}
+
+.biomarker-display-panel table.biomarker-table th {
+    background: #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.biomarker-display-panel table.biomarker-table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+/* Multi-column filter dropdown (reuses year-filter styles) */
+.col-filter-th {
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap !important;
+}
+
+.col-filter-th .filter-arrow {
+    display: inline-block;
+    font-size: 1.1em;
+    margin-left: 4px;
+    vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.col-filter-th.open .filter-arrow {
+    transform: rotate(180deg);
+}
+
+.col-filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+    min-width: 140px;
+    max-height: 260px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.18);
+    margin-top: 2px;
+    padding: 2px 0;
+}
+
+.col-filter-dropdown.show {
+    display: block;
+}
+
+.col-filter-dropdown .filter-option {
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: normal;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #222;
+}
+
+.col-filter-dropdown .filter-option:hover {
+    background: #e0ecff;
+}
+
+.col-filter-dropdown .filter-option.selected {
+    background: #cde0ff;
+    font-weight: bold;
+}
+
+/* Wider main content for diagnostics and treatment sections */
+#main-content.diagnostics-active,
+#main-content.treatment-active {
+    max-width: 1400px;
+}
+
+/* ====== Treatment Options – NCG display panel ====== */
+.treatment-content {
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+}
+
+.ncg-display-panel {
+    border: 1px solid #333;
+    width: 100%;
+    height: 540px;
+    overflow: auto;
+    background: #fafafa;
+    position: relative;
+    margin-top: 12px;
+}
+
+.ncg-panel-inner {
+    padding: 10px;
+    min-height: 100%;
+}
+
+.ncg-display-panel table.ncg-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    table-layout: fixed;
+}
+
+.ncg-display-panel table.ncg-table colgroup .col-state {
+    width: 18%;
+}
+
+.ncg-display-panel table.ncg-table colgroup .col-institution {
+    width: 36%;
+}
+
+.ncg-display-panel table.ncg-table colgroup .col-address {
+    width: 46%;
+}
+
+.ncg-display-panel table.ncg-table th,
+.ncg-display-panel table.ncg-table td {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    vertical-align: top;
+}
+
+.ncg-display-panel table.ncg-table th {
+    background: #e8e8e8;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.ncg-display-panel table.ncg-table tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
 @media (max-width: 768px) {
     .genomics-panels-row,
     .proteomics-panels-row {

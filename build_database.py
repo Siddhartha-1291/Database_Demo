@@ -138,6 +138,42 @@ def build_database():
         rows = read_csv_rows(csv_path)
         create_table_from_csv(conn, table_name, rows)
 
+    # --- 4b. Biomarker prospective-studies table + Gene/Protein derivatives ---
+    biomarker_csv = BASE / "Biomarker_Prospective_Study_Cancer" / "Biomarkers_in_Cancer_Prospective_Studies_Data_Table.csv"
+    if biomarker_csv.exists():
+        bm_rows = read_csv_rows(biomarker_csv)
+        create_table_from_csv(conn, biomarker_csv.stem, bm_rows)
+
+        if bm_rows:
+            header = bm_rows[0]
+            pgo_idx = -1
+            for i, h in enumerate(header):
+                if h.strip() == "Protein_Gene_or_Other":
+                    pgo_idx = i
+                    break
+
+            if pgo_idx >= 0:
+                gene_rows = [header] + [r for r in bm_rows[1:] if "Gene" in (r[pgo_idx] if pgo_idx < len(r) else "")]
+                prot_rows = [header] + [r for r in bm_rows[1:] if "Protein" in (r[pgo_idx] if pgo_idx < len(r) else "")]
+                create_table_from_csv(conn, "Gene_Biomarkers_in_Cancer_Prospective_Studies_Data_Table", gene_rows)
+                create_table_from_csv(conn, "Protein_Biomarkers_in_Cancer_Prospective_Studies_Data_Table", prot_rows)
+
+    # --- 4c. NCG_TMC table (state/territory → institution → address) ---
+    ncg_csv = BASE / "NCG_TMC.csv"
+    if ncg_csv.exists():
+        raw_rows = read_csv_rows(ncg_csv)
+        ncg_header = ["State_or_Territory", "Institution_Name", "Address"]
+        ncg_data = [ncg_header]
+        current_state = ""
+        for row in raw_rows:
+            col0 = (row[0] if len(row) > 0 else "").strip()
+            col1 = (row[1] if len(row) > 1 else "").strip()
+            if col0 and not col1:
+                current_state = col0
+            elif col0:
+                ncg_data.append([current_state, col0, col1])
+        create_table_from_csv(conn, "NCG_TMC", ncg_data)
+
     # --- 5. Remove tables for which the CSV no longer exists ---
     cur = conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
     existing_tables = [r[0] for r in cur.fetchall()]
