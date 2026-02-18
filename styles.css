@@ -859,8 +859,10 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
+    right: auto;
     z-index: 150;
     min-width: 260px;
+    max-width: calc(100vw - 16px);
     background: #fff;
     border: 1px solid #999;
     border-radius: 3px;
@@ -1014,6 +1016,25 @@ body {
     font-size: 25px;
     color: black;
     text-align: justify;
+}
+
+.trials-content {
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+}
+
+.education-content {
+    font-size: 25px;
+    color: black;
+    text-align: justify;
+}
+
+.subsection-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 12px 0;
+    text-align: center;
 }
 
 .ncg-display-panel {

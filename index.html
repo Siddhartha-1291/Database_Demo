@@ -45,10 +45,38 @@
                 </div>
             </div>
             <button class="menu-btn" data-section="literature">Cancer Literature</button>
-            <button class="menu-btn" data-section="diagnostics" data-subsection="diagnostics">Diagnostics</button>
-            <button class="menu-btn" data-section="treatment">Treatment Options</button>
-            <button class="menu-btn" data-section="trials">Clinical Trials</button>
-            <button class="menu-btn" data-section="education">Education</button>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="diagnostics">Diagnostics</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="diagnostics" data-subsection="biomarker-lit">Biomarker Data From Literature</div>
+                    <div class="menu-hover-option" data-section="diagnostics" data-subsection="diagnostic-tools">Diagnostic Tools</div>
+                    <div class="menu-hover-option" data-section="diagnostics" data-subsection="biorepositories">Biorepositories</div>
+                </div>
+            </div>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="treatment">Treatment Options</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="treatment" data-subsection="ncg-list">List of National Cancer Grid (NCG) Institutes/Hospitals</div>
+                    <div class="menu-hover-option" data-section="treatment" data-subsection="cdsco-drugs">CDSCO-Approved Cancer Drugs Sold in the Indian Market</div>
+                </div>
+            </div>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="trials">Clinical Trials</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="trials" data-subsection="patient-selection">Guidelines For Patient Selection</div>
+                    <div class="menu-hover-option" data-section="trials" data-subsection="drug-response">Drug Response Prediction</div>
+                    <div class="menu-hover-option" data-section="trials" data-subsection="druggable-targets">Druggable Targets- Signalling and Biochemical Pathways</div>
+                    <div class="menu-hover-option" data-section="trials" data-subsection="drugs-under-trials">Drugs Under Clinical Trials</div>
+                </div>
+            </div>
+            <div class="menu-dropdown-wrapper">
+                <button class="menu-btn" data-section="education">Education</button>
+                <div class="menu-hover-dropdown">
+                    <div class="menu-hover-option" data-section="education" data-subsection="cancer-bio-edu">Cancer Biology Education</div>
+                    <div class="menu-hover-option" data-section="education" data-subsection="high-throughput">High-Throughput Cancer Data In India</div>
+                    <div class="menu-hover-option" data-section="education" data-subsection="awareness">Cancer Awareness Programmes</div>
+                </div>
+            </div>
         </nav>
 
         <!-- Main content area -->
@@ -56,7 +84,7 @@
             <!-- Home section (default) -->
             <section id="section-home" class="content-section active">
                 <div class="welcome-content">
-                    <p>Welcome to the Indian Cancer Database for Translational Research (ICDTRA) demo website.</p>
+                    <p>Welcome to the demo website of the Indian Cancer Database for Translational Research- ACTREC (ICDTRA)!</p>
                     <p>Use the menu above to navigate between sections.</p>
                 </div>
             </section>
@@ -79,6 +107,7 @@
             <section id="section-genomics" class="content-section genomics-section">
                 <!-- Differential Expression sub-section (default) -->
                 <div class="genomics-content subsection-panel" id="genomics-diff-expr">
+                    <h3 class="subsection-title">Differential Gene Expression</h3>
                     <!-- Search controls row -->
                     <div class="genomics-search-row">
                         <div class="search-field">
@@ -149,6 +178,7 @@
                 </div>
                 <!-- Biomarker sub-section for Cancer Genomics -->
                 <div class="biomarker-subsection subsection-panel" id="genomics-biomarker" style="display:none;">
+                    <h3 class="subsection-title">Gene Biomarker Data From Literature</h3>
                     <div class="diagnostics-content">
                         <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
                         <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
@@ -164,6 +194,7 @@
             <section id="section-proteomics" class="content-section">
                 <!-- Differential Expression sub-section (default) -->
                 <div class="proteomics-content subsection-panel" id="proteomics-diff-expr">
+                    <h3 class="subsection-title">Differential Protein Expression</h3>
                     <p>Cancer Proteomics will operate similarly to Cancer Genomics. The proteomics database-derived differential expression data display in this section is not active at present, owing to difficulties in obtaining freely available differential expression data that is organised in a database. (Placeholder)</p>
                     <p>View differential protein expression data drawn from cancer literature, below:</p>
 
@@ -196,6 +227,7 @@
                 </div>
                 <!-- Biomarker sub-section for Cancer Proteomics -->
                 <div class="biomarker-subsection subsection-panel" id="proteomics-biomarker" style="display:none;">
+                    <h3 class="subsection-title">Protein Biomarker Data From Literature</h3>
                     <div class="diagnostics-content">
                         <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
                         <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
@@ -232,37 +264,89 @@
 
             <!-- Diagnostics section -->
             <section id="section-diagnostics" class="content-section">
-                <div class="diagnostics-content">
-                    <p>This section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators) The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
+                <!-- Biomarker Data From Literature sub-section (default) -->
+                <div class="diagnostics-content subsection-panel" id="diagnostics-biomarker-lit">
+                    <h3 class="subsection-title">Biomarker Data From Literature</h3>
+                    <p>This sub-section displays the data on biomarkers that were gathered from the literature, through a PubMed (<a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/</a>) Advanced Search for &ldquo;biomarker&rdquo; AND &ldquo;prospective study&rdquo; AND a set of terms for various types of cancer (e.g.: sarcoma, lymphoma, myeloma, etc&hellip;, separated by &lsquo;OR&rsquo; separators). The fields with drop-down menus can be used to filter the rows. For now, the filters applied are simple exact-matching searches. In the future, this exact-matching of search query terms will be replaced by more sophisticated automated term matching (ATM) logic similar to that in the search bars in PubMed.</p>
                     <label class="panel-label biomarker-panel-label">Biomarker Data From Literature</label>
                     <div class="biomarker-display-panel" id="diagnostics-biomarker-panel">
                         <div class="biomarker-panel-inner"></div>
                     </div>
                     <button type="button" class="download-btn biomarker-download-btn" id="download-diagnostics-biomarker-btn" disabled>Download Displayed Biomarker Data From Literature</button>
                 </div>
+                <!-- Diagnostic Tools sub-section -->
+                <div class="diagnostics-content subsection-panel" id="diagnostics-diagnostic-tools" style="display:none;">
+                    <h3 class="subsection-title">Diagnostic Tools</h3>
+                    <p>This sub-section will host information on diagnostic tools employed by clinicians to detect and diagnose the presence and prognosis of cancer, such as anatomic imaging techniques like computed tomography (CT) and magnetic resonance imaging (MRI), functional imaging techniques like positron emission tomography (PET) scanning, histopathology-based techniques like immunohistochemistry (IHC) and haematoxylin and eosin (H&amp;E) staining, genomics-based techniques like next-generation sequencing (NGS) for high-throughput screening of genomes to look for mutations in DNA (genes) that could inform treatment decisions, and immunoassays like enzyme-linked immunosorbent assay (ELISA) used to detect concentrations of circulating protein biomarkers of cancer (e.g.: prostate specific antigen(PSA) for prostate cancer). This information will be collated from review articles and educational websites and will be published here, after being ratified by clinicians.</p>
+                </div>
+                <!-- Biorepositories sub-section -->
+                <div class="diagnostics-content subsection-panel" id="diagnostics-biorepositories" style="display:none;">
+                    <h3 class="subsection-title">Biorepositories</h3>
+                    <p>TMC-ACTREC&rsquo;s biorepository presently has &le; 100 cryopreserved tumour samples, spanning a variety of cancer types, that were collected from multiple recurrences of solid cancerous tumours resected from the same patients. The paired clinical notes and treatment regimens applied, as accessed from the corresponding electronic medical records (EMRs) of these patients, are available to the biorepository. The collection of such tumour samples that were collected over the course of multiple recurrences could be used by researchers to identify changes in the concentrations of various transcripts (RNA) and proteins, for correlation with clinical characteristics and clinical endpoints such as survival or death, at the completion of a prescribed duration since the collection of the first sample, pending approval from the institutional review board (IRB). The EMR data paired with samples from a single patient could be made available to researchers after anonymisation. Listing such available sets of tumour samples collected from multiple recurrences that occurred in the same patient, along with the paired EMR after anonymisation, in this sub-section could facilitate research. Similar datasets could be listed from other cancer biorepositories in the country (e.g. the biorepository at Tata Memorial Hospital (TMH), Parel), which could greatly augment the usefulness of this part of the database.</p>
+                </div>
             </section>
 
             <!-- Treatment Options section -->
             <section id="section-treatment" class="content-section">
-                <div class="treatment-content">
+                <!-- NCG Institutes/Hospitals sub-section (default) -->
+                <div class="treatment-content subsection-panel" id="treatment-ncg-list">
+                    <h3 class="subsection-title">List of National Cancer Grid (NCG) Institutes/Hospitals</h3>
                     <p>Listed below are the hospitals and institutions that are members of the National Cancer Grid (NCG), organised by Tata Memorial Centre (TMC). These member hospitals/research institutes provide cancer care as well as collaborate for translational research in cancer.</p>
                     <div class="ncg-display-panel" id="ncg-display-panel">
                         <div class="ncg-panel-inner"></div>
                     </div>
                 </div>
+                <!-- CDSCO-Approved Cancer Drugs sub-section -->
+                <div class="treatment-content subsection-panel" id="treatment-cdsco-drugs" style="display:none;">
+                    <h3 class="subsection-title">CDSCO-Approved Cancer Drugs Sold in the Indian Market</h3>
+                    <p>This sub-section will list cancer drugs sold in the Indian market, for which the Central Drugs Standard Control Organization (CDSCO) of India has granted approval. This list will be prepared by cross-referencing the list of cancer drugs sold by TMC-ACTREC&rsquo;s pharmacy with the lists of approved drugs released by CDSCO. The annotations of mechanisms of action of these drugs will be provided from the cancer literature. This list will help researchers to find drugs that are presently available in the Indian market and to cross-reference any drug that they have in mind against this list.</p>
+                </div>
             </section>
 
             <!-- Clinical Trials section (placeholder) -->
             <section id="section-trials" class="content-section">
-                <div class="placeholder-content">
-                    <p>Clinical Trials section. (Placeholder)</p>
+                <!-- Guidelines For Patient Selection sub-section (default) -->
+                <div class="trials-content subsection-panel" id="trials-patient-selection">
+                    <h3 class="subsection-title">Guidelines For Patient Selection</h3>
+                    <p>This sub-section will explain the seeking of informed consent from patients to be recruited into clinical trials as participants/subjects. It will also convey that the inclusion and exclusion criteria for recruitment into a clinical trial as a subject vary from clinical trial to clinical trial. Nonetheless, it will attempt to highlight the kinds of subject-recruitment selection criteria common to a number of clinical trials, as reported in cancer literature.</p>
+                </div>
+                <!-- Drug Response Prediction sub-section -->
+                <div class="trials-content subsection-panel" id="trials-drug-response" style="display:none;">
+                    <h3 class="subsection-title">Drug Response Prediction</h3>
+                    <p>This sub-section will encourage the users to search for details about the drug of choice in Drugbank&rsquo;s web server (<a href="https://go.drugbank.com/" target="_blank" rel="noopener">https://go.drugbank.com/</a>), download the SMILES format designation for this drug, and enter this SMILES designation in the appropriate search field in the web server of SwissADME (<a href="https://www.swissadme.ch/" target="_blank" rel="noopener">https://www.swissadme.ch/</a>). (ADME stands for Absorption, Distribution, Metabolism, and Excretion.) SwissADME will then provide predictions of pharmacokinetic parameters- predictions of presence/extent or absence of absorption by the gastrointestinal tract, passage through the blood-brain barrier, passage through the P-glycoprotein drug efflux pump as a substrate, skin permeation, and inhibition of Cytochrome P450, in the human body. Searching with the SMILES designation in the ADMET prediction web-server ADMET-AI (<a href="https://admet.ai.greenstonebio.com/" target="_blank" rel="noopener">https://admet.ai.greenstonebio.com/</a>) will yield predictions of all these parameters of pharmacokinetics (PK), plus more PK parameters, and toxicity predictions (the &lsquo;T&rsquo; in &lsquo;ADMET&rsquo;).</p>
+                </div>
+                <!-- Druggable Targets sub-section -->
+                <div class="trials-content subsection-panel" id="trials-druggable-targets" style="display:none;">
+                    <h3 class="subsection-title">Druggable Targets- Signalling and Biochemical Pathways</h3>
+                    <p>The user will be asked to enter the SMILES designation of the drug of choice in the search box of the web server of SwissTarget (<a href="https://www.swisstargetprediction.ch/" target="_blank" rel="noopener">https://www.swisstargetprediction.ch/</a>) and run a search. SwissTarget will then provide predictions of potential target proteins to which the submitted drug molecule might bind, along with probabilities of these binding interactions. Checking the UniProt IDs listed by SwissTarget, for the predicted target molecules, in the Reactome database (<a href="https://reactome.org/" target="_blank" rel="noopener">https://reactome.org/</a>) will inform the user of the signalling pathways in which the potential target operates. Searching for the SMILES ID in DrugBank also provides the known mechanism of action of the drug, if any. The user could also enter the name of the drug or target to be queried into the search bar in the STITCH database web server (<a href="https://stitch-db.org/" target="_blank" rel="noopener">https://stitch-db.org/</a>) and run a search, after selecting the organism. STITCH then reports a network of interactors for the queried item- targets for the queried drug or drugs known to interact with the queried target protein. STITCH thus provides the user with network pharmacology information.</p>
+                </div>
+                <!-- Drugs Under Clinical Trials sub-section -->
+                <div class="trials-content subsection-panel" id="trials-drugs-under-trials" style="display:none;">
+                    <h3 class="subsection-title">Drugs Under Clinical Trials</h3>
+                    <p>The user could be directed to the US government&rsquo;s official website for reporting clinical trials&rsquo; data (<a href="https://clinicaltrials.gov/" target="_blank" rel="noopener">https://clinicaltrials.gov/</a>), where the user could search for the type of cancer and the drugs used in the trial and select an appropriate trial from the search hits. One could discover either a drug used in a clinical trial for the treatment of the cancer type of interest or such a trial conducted using a particular combination of drugs.</p>
                 </div>
             </section>
 
             <!-- Education section (placeholder) -->
             <section id="section-education" class="content-section">
-                <div class="placeholder-content">
-                    <p>Education section. (Placeholder)</p>
+                <!-- Cancer Biology Education sub-section (default) -->
+                <div class="education-content subsection-panel" id="education-cancer-bio-edu">
+                    <h3 class="subsection-title">Cancer Biology Education</h3>
+                    <p>Cancer biology can be explained, in this sub-section, based on reviews on cancer biology in the literature, as well as inputs from the faculty of TMC-ACTREC.</p>
+                </div>
+                <!-- High-Throughput Cancer Data In India sub-section -->
+                <div class="education-content subsection-panel" id="education-high-throughput" style="display:none;">
+                    <h3 class="subsection-title">High-Throughput Cancer Data In India</h3>
+                    <p>High throughput cancer genomics data from the Indian cohort of cancer patients may be obtained from resources such as the Bharat Cancer Genome Atlas (BCGA) (<a href="https://bcga.iitm.ac.in/" target="_blank" rel="noopener">https://bcga.iitm.ac.in/</a>) developed by IIT-Madras, and the Indian Cancer Genome Atlas (ICGA) (<a href="https://www.icga.in/" target="_blank" rel="noopener">https://www.icga.in/</a>).</p>
+                </div>
+                <!-- Cancer Awareness Programmes sub-section -->
+                <div class="education-content subsection-panel" id="education-awareness" style="display:none;">
+                    <h3 class="subsection-title">Cancer Awareness Programmes</h3>
+                    <p>Cancer awareness programmes and cancer-awareness-promoting organisations such as the following could be brought to the users&rsquo; attention:</p>
+                    <p>National Cancer Awareness Day: 07 November.</p>
+                    <p>Indian Cancer Society (<a href="https://www.indiancancersociety.org/" target="_blank" rel="noopener">https://www.indiancancersociety.org/</a>).</p>
+                    <p>WE-CAN Project (<a href="https://www.wecanwecanwecan.com/" target="_blank" rel="noopener">https://www.wecanwecanwecan.com/</a>).</p>
+                    <p>The above programmes/organisations are engaged in both providing emotional support to cancer patients and spreading awareness about cancer and getting screened to detect cancer early, which raises the chances of surviving it.</p>
                 </div>
             </section>
         </main>

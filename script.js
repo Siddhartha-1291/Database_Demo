@@ -62,14 +62,70 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        // Auto-load diagnostics biomarker data
+        // Handle sub-sections within diagnostics
         if (sectionId === 'diagnostics') {
-            initBiomarkerPanel('diagnostics');
+            var diagSubIds = ['diagnostics-biomarker-lit', 'diagnostics-diagnostic-tools', 'diagnostics-biorepositories'];
+            var diagTarget = 'diagnostics-biomarker-lit'; // default
+            if (subsection === 'diagnostic-tools') {
+                diagTarget = 'diagnostics-diagnostic-tools';
+            } else if (subsection === 'biorepositories') {
+                diagTarget = 'diagnostics-biorepositories';
+            }
+            diagSubIds.forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = (id === diagTarget) ? '' : 'none';
+            });
+            if (diagTarget === 'diagnostics-biomarker-lit') {
+                initBiomarkerPanel('diagnostics');
+            }
         }
 
-        // Auto-load NCG data for Treatment Options
+        // Handle sub-sections within Treatment Options
         if (sectionId === 'treatment') {
-            initNCGPanel();
+            var treatSubIds = ['treatment-ncg-list', 'treatment-cdsco-drugs'];
+            var treatTarget = 'treatment-ncg-list'; // default
+            if (subsection === 'cdsco-drugs') {
+                treatTarget = 'treatment-cdsco-drugs';
+            }
+            treatSubIds.forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = (id === treatTarget) ? '' : 'none';
+            });
+            if (treatTarget === 'treatment-ncg-list') {
+                initNCGPanel();
+            }
+        }
+
+        // Handle sub-sections within Clinical Trials
+        if (sectionId === 'trials') {
+            var trialsSubIds = ['trials-patient-selection', 'trials-drug-response', 'trials-druggable-targets', 'trials-drugs-under-trials'];
+            var trialsTarget = 'trials-patient-selection'; // default
+            if (subsection === 'drug-response') {
+                trialsTarget = 'trials-drug-response';
+            } else if (subsection === 'druggable-targets') {
+                trialsTarget = 'trials-druggable-targets';
+            } else if (subsection === 'drugs-under-trials') {
+                trialsTarget = 'trials-drugs-under-trials';
+            }
+            trialsSubIds.forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = (id === trialsTarget) ? '' : 'none';
+            });
+        }
+
+        // Handle sub-sections within Education
+        if (sectionId === 'education') {
+            var eduSubIds = ['education-cancer-bio-edu', 'education-high-throughput', 'education-awareness'];
+            var eduTarget = 'education-cancer-bio-edu'; // default
+            if (subsection === 'high-throughput') {
+                eduTarget = 'education-high-throughput';
+            } else if (subsection === 'awareness') {
+                eduTarget = 'education-awareness';
+            }
+            eduSubIds.forEach(function (id) {
+                var el = document.getElementById(id);
+                if (el) el.style.display = (id === eduTarget) ? '' : 'none';
+            });
         }
 
         if (sectionId === 'home') {
@@ -92,6 +148,31 @@ document.addEventListener('DOMContentLoaded', function () {
             var sectionId = this.getAttribute('data-section');
             var subsection = this.getAttribute('data-subsection');
             activateSection(sectionId, subsection);
+        });
+    });
+
+    // Keep hover dropdowns within the visible viewport width
+    var dropdownWrappers = document.querySelectorAll('.menu-dropdown-wrapper');
+    dropdownWrappers.forEach(function (wrapper) {
+        wrapper.addEventListener('mouseenter', function () {
+            var dd = wrapper.querySelector('.menu-hover-dropdown');
+            if (!dd) return;
+            // Reset to default alignment before measuring
+            dd.style.left = '0';
+            dd.style.right = 'auto';
+            var rect = dd.getBoundingClientRect();
+            var viewportW = document.documentElement.clientWidth;
+            if (rect.right > viewportW) {
+                // Dropdown overflows the right edge – anchor to the right side of the button
+                dd.style.left = 'auto';
+                dd.style.right = '0';
+                // Re-check: if it now overflows the left edge, shift it so left edge is at 0
+                var rect2 = dd.getBoundingClientRect();
+                if (rect2.left < 0) {
+                    dd.style.right = 'auto';
+                    dd.style.left = (-wrapper.getBoundingClientRect().left) + 'px';
+                }
+            }
         });
     });
 
